@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { AlignJustify, X as XIcon } from "lucide-react";
-import classNames from "classnames";
+
 
 const menuItems = [
   { id: 1, label: "Home", href: "#" },
@@ -32,8 +32,8 @@ const Header: React.FC = () => {
       setIsFadingOut(true);
       setTimeout(() => {
         setHamburgerMenuIsOpen(false);
-        setIsFadingOut(false); // Reset the fading state after it finishes
-      }, 500); // Match the duration of the fadeOut animation (0.5s)
+        setIsFadingOut(false); 
+      }, 500); 
     } else {
       setHamburgerMenuIsOpen(true);
     }

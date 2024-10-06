@@ -8,9 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backdropBlur: {
-        '3xl': '40px', // Ensuring you have the larger blur sizes
-      },
+     
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
