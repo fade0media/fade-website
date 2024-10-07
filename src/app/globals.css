@@ -42,13 +42,13 @@
 @media (max-width: 768px) { /* Tailwind's sm breakpoint */
   .background-gradient {
     background: radial-gradient(
-      ellipse at center 73%, /* Center position at 75% vertically */
+      ellipse at center 82%, /* Center position at 75% vertically */
       rgba(19, 171, 191, 1) 0%,   /* Blue color at the center */
       rgba(9, 60, 66, 1) 10%,      /* Darker blue at 10% */
       rgba(0, 0, 0, 1) 40%          /* Black at the edges */
     );
 
-    background-size: 250% 100%;
+    background-size: 400% 100%;
     background-position: 50% 50%;
   }
 
