@@ -40,13 +40,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50 bg-transparent backdrop-blur-md w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4">
+    <header className="fixed left-0 top-0 z-50  w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <a className="text-lg flex items-center font-bold" href="/">
           Logo
         </a>
 
-        <ul className="ml-auto md:flex h-full items-center justify-center gap-8 text-md hidden">
+        <ul className="ml-auto md:flex h-full items-center justify-center gap-8 text-md hidden backdrop-blur-md ">
           {menuItems.map((item) => (
             <li key={item.id} className="py-2">
               <a
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
       {/* Mobile menu */}
       {(hamburgerMenuIsOpen || isFadingOut) && (
         <nav
-          className={`fixed top-14 h-screen py-8 left-0 z-50 w-full backdrop-blur-sm bg-black/70 transition-transform`}
+          className={`fixed top-14 h-screen py-8 left-0 z-50 w-full backdrop-blur-lg bg-black/70 transition-transform`}
         >
           <ul className="flex flex-col">
             {menuItems.map((item, index) => (
