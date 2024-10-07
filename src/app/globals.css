@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +6,69 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+.background-gradient {
+  background: radial-gradient(
+    ellipse at center 60%, /* Center position of the gradient, horizontal and lower */
+    rgba(19, 171, 191, 1) 0%,   /* Blue color at the center */
+    rgba(9, 60, 66, 1) 10%,     /* Darker blue at 30% */
+    rgba(0, 0, 0, 1) 40%         /* Black at the edges */
+  );
+  background-size: 200% 100%;
+  background-position: 50% 50%;
+}
 
+
+.mask-gradient {
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.fade-to-black {
+  position: relative; /* Ensure the div is positioned correctly for absolute elements */
+}
+
+.fade-to-black::after {
+  content: '';
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%); /* Fades to black */
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+
+@media (max-width: 768px) { /* Tailwind's sm breakpoint */
+  .background-gradient {
+    background: radial-gradient(
+      ellipse at center 73%, /* Center position at 75% vertically */
+      rgba(19, 171, 191, 1) 0%,   /* Blue color at the center */
+      rgba(9, 60, 66, 1) 10%,      /* Darker blue at 10% */
+      rgba(0, 0, 0, 1) 40%          /* Black at the edges */
+    );
+
+    background-size: 250% 100%;
+    background-position: 50% 50%;
+  }
+
+  .fade-to-black::after {
+    content: '';
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent; /* Fades to black */
+    pointer-events: none; /* Allows clicks to pass through */
+  }
+
+  
+}
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -26,3 +84,25 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Thin scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width */
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(96, 96, 96); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  ::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+}
+

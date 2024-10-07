@@ -5,8 +5,8 @@ import { AlignJustify, X as XIcon } from "lucide-react";
 
 
 const menuItems = [
-  { id: 1, label: "Home", href: "#" },
-  { id: 2, label: "About", href: "#" },
+  { id: 1, label: "Home", href: "/" },
+  { id: 2, label: "About", href: "/about" },
   { id: 3, label: "Services", href: "#" },
   { id: 4, label: "Projects", href: "#" },
   { id: 5, label: "Contact Us", href: "#" },
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-700 md:px-24 px-4">
+    <header className="fixed left-0 top-0 z-50 bg-transparent backdrop-blur-md w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <a className="text-lg flex items-center font-bold" href="/">
           Logo

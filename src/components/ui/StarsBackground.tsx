@@ -90,22 +90,67 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 
     let animationFrameId: number;
 
-    const render = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      stars.forEach((star) => {
-        
-        const time = Date.now() * 0.002;
-        star.x = star.baseX + Math.sin(time * star.hoverSpeedX) * star.hoverAmplitudeX;
-        star.y = star.baseY + Math.cos(time * star.hoverSpeedY) * star.hoverAmplitudeY;
-
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, 1)`;
-        ctx.fill();
-      });
-
-      animationFrameId = requestAnimationFrame(render);
-    };
+    // const render = () => {
+    //     // Clear the canvas
+    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+    //     // Create a radial gradient with the center lower
+    //     const gradient = ctx.createRadialGradient(
+    //       canvas.width / 2,  // x-coordinate of the gradient's center
+    //       canvas.height * 1.3,  // y-coordinate of the gradient's center (lower vertically)
+    //       100,             // Start radius (for a small blue center)
+    //       canvas.width / 2,  // x-coordinate of the gradient's outer circle
+    //       canvas.height / 2, // y-coordinate of the gradient's outer circle
+    //       canvas.width      // Outer radius (for full coverage)
+    //     );
+      
+    //     // Add color stops for a smooth blue-to-black transition
+    //     gradient.addColorStop(0.5, "#000000");  
+    //     gradient.addColorStop(0.0001, "#093c42"); 
+    //     gradient.addColorStop(0, "#13abbf");  
+      
+    //     // Fill the background with the radial gradient
+    //     ctx.fillStyle = gradient;
+    //     ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+    //     // Render stars on top of the gradient background
+    //     stars.forEach((star) => {
+    //       const time = Date.now() * 0.002;
+    //       star.x = star.baseX + Math.sin(time * star.hoverSpeedX) * star.hoverAmplitudeX;
+    //       star.y = star.baseY + Math.cos(time * star.hoverSpeedY) * star.hoverAmplitudeY;
+      
+    //       ctx.beginPath();
+    //       ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    //       ctx.fillStyle = `rgba(255, 255, 255, 1)`; // White color for stars
+    //       ctx.fill();
+    //     });
+      
+    //     // Continue the animation
+    //     animationFrameId = requestAnimationFrame(render);
+    //   };
+      
+      const render = () => {
+        // Clear the canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // This clears the canvas to be fully transparent
+      
+        // Render stars on top of the transparent background
+        stars.forEach((star) => {
+          const time = Date.now() * 0.002;
+          star.x = star.baseX + Math.sin(time * star.hoverSpeedX) * star.hoverAmplitudeX;
+          star.y = star.baseY + Math.cos(time * star.hoverSpeedY) * star.hoverAmplitudeY;
+      
+          ctx.beginPath();
+          ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255, 255, 255, 1)`; // White color for stars
+          ctx.fill();
+        });
+      
+        // Continue the animation
+        animationFrameId = requestAnimationFrame(render);
+      };
+      
+      
+      
 
     render();
 
@@ -117,7 +162,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className={cn("h-full w-full absolute inset-0 -z-10", className)}
+      className={cn("h-full w-full absolute inset-0 -z-0", className)}
     />
   );
 };
