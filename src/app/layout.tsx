@@ -3,8 +3,6 @@ import localFont from 'next/font/local'
 import "./globals.css";
 
 import Header from "@/components/ui/Header";
-
-import { Instrument_Sans } from 'next/font/google'
 import Footer from "@/components/ui/Footer";
 
 

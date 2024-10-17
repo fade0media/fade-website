@@ -13,7 +13,7 @@ const page = () => {
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute z-0 pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="text-4xl text-center sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-br from-pink-500 via-orange-300 to-violet-600 mb-3 py-2">
-        Let's get to work!
+        Let&apos;s get to work!
       </p>
       <p className='text-md sm:text-lg text-center'>Hop on a quick call with us and explore endless possibilities!</p>
     </div>
