@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from "react";
-import { AlignJustify, ArrowUpRight, Link, X as XIcon } from "lucide-react";
+import { AlignJustify, ArrowUpRight, X as XIcon } from "lucide-react";
 
 
 const menuItems = [
