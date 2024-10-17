@@ -1,11 +1,8 @@
 'use client'
 import React from 'react'
-import Cal, { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
-import { div } from 'framer-motion/client';
+
 import Calendar from '@/components/ui/Calendar';
-import { StarsBackground } from '@/components/ui/StarsBackground';
-import Button from '@/components/ui/Button';
+
 const page = () => {
     
     return (

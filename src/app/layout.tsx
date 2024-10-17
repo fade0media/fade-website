@@ -8,10 +8,7 @@ import { Instrument_Sans } from 'next/font/google'
 import Footer from "@/components/ui/Footer";
 
 
-const openSans = Instrument_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-})
+
 
 const satoshi = localFont({
   src: [

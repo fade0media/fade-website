@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { ArrowUpRight } from 'lucide-react';
-import Button from '@/components/ui/Button';
+
 import { StarsBackground } from '@/components/ui/StarsBackground';
 
 
@@ -34,12 +34,12 @@ const Services = () => {
 
     <div className="border border-gray-500 px-8 py-6 rounded-xl w-full flex flex-col justify-center items-start gap-3">
         <h3 className="text-2xl font-bold mt-8">SaaS Marketing</h3>
-        <p className="text-gray-400">Market your SaaS like it's the best!</p>
+        <p className="text-gray-400">Market your SaaS like its the best!</p>
     </div>
 
     <div className="border border-gray-500 px-8 py-6 rounded-xl w-full flex flex-col justify-center items-start gap-3">
         <h3 className="text-2xl font-bold mt-8">SaaS Marketing</h3>
-        <p className="text-gray-400">Market your SaaS like it's the best!</p>
+        <p className="text-gray-400">Market your SaaS like its the best!</p>
     </div>
 </div>
 

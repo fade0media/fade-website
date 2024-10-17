@@ -53,13 +53,13 @@ const Footer = () => {
                 <div className="flex-grow flex md:pl-20 md:justify-end text-left justify-start gap-8 lg:gap-16 flex-wrap">
                     
                         {
-                            footerData.map((item) => (
-                                <div className="flex flex-col justify-start items-start w-1/2 md:w-1/4">
+                            footerData.map((item, index) => (
+                                <div key={index} className="flex flex-col justify-start items-start w-1/2 md:w-1/4">
                                 <h2 className="title-font font-medium text-violet-400 tracking-wide text-lg">{item.title}</h2>
                         <nav className="list-none mb-4">
                             {
-                                item.links.map((link) => (
-                                    <li className=' mt-3'>
+                                item.links.map((link, index) => (
+                                    <li key={index} className=' mt-3'>
                                 <a className="text-gray-400 hover:text-gray-800">{link}</a>
                             </li>
                                 ))
