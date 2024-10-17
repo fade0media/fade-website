@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from "react";
-import { AlignJustify, X as XIcon } from "lucide-react";
+import { AlignJustify, ArrowUpRight, Link, X as XIcon } from "lucide-react";
 
 
 const menuItems = [
@@ -9,7 +9,7 @@ const menuItems = [
   { id: 2, label: "About", href: "/about" },
   { id: 3, label: "Services", href: "#" },
   { id: 4, label: "Projects", href: "#" },
-  { id: 5, label: "Contact Us", href: "#" },
+  
 ];
 
 const Header: React.FC = () => {
@@ -40,13 +40,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50  w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4">
+    <header className="fixed left-0 top-0 z-50  w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4 backdrop-blur-md ">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <a className="text-lg flex items-center font-bold" href="/">
-          Logo
+          fade.
         </a>
 
-        <ul className="ml-auto md:flex h-full items-center justify-center gap-8 text-md hidden backdrop-blur-md ">
+        <ul className="md:flex h-full items-center justify-center gap-8 text-md hidden ">
           {menuItems.map((item) => (
             <li key={item.id} className="py-2">
               <a
@@ -58,6 +58,11 @@ const Header: React.FC = () => {
             </li>
           ))}
         </ul>
+
+        <a href="/contact" className='bg-white text-black whitespace-nowrap px-3 py-2 flex justify-center items-center gap-2 text-xs rounded-2xl font-semibold cursor-pointer'>
+                Get a Quote
+              <ArrowUpRight className='w-4 h-4'/>
+        </a>
 
         <button
           className="ml-6 md:hidden"

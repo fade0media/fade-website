@@ -2,16 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  scroll-behavior: smooth;
+}
+.contact {
+  background-color: black;
+
+  background-image: 
+    radial-gradient(circle at 50% 1%, rgba(0, 0, 0, 0) 1%, black 100%), /* Vignette effect */
+    url("../public/grids.svg"); /* Your grid image */
+  
+  /* background-repeat: no-repeat; */
+  
+}
+.about {
+  background-color: black;
+
+  background-image: 
+    
+    url("../public/about.svg");
+}
+
+
+/* .hero-bg {
+  background-image: url("../public/bg-10.svg");
+  
+  background-size: contain;
+  background-repeat: none;
+} */
+body {
+  background-color: black;
+  color: white;
 }
 .background-gradient {
   background: radial-gradient(
     ellipse at center 60%, /* Center position of the gradient, horizontal and lower */
     rgba(19, 171, 191, 1) 0%,   /* Blue color at the center */
-    rgba(9, 60, 66, 1) 10%,     /* Darker blue at 30% */
-    rgba(0, 0, 0, 1) 40%         /* Black at the edges */
+    #463380 10%,     /* Darker blue at 30% */
+    rgba(0, 0, 0, 1) 30%         /* Black at the edges */
   );
   background-size: 200% 100%;
   background-position: 50% 50%;
@@ -40,16 +68,23 @@
 
 
 @media (max-width: 768px) { /* Tailwind's sm breakpoint */
-  .background-gradient {
+  /* .background-gradient {
     background: radial-gradient(
-      ellipse at center 82%, /* Center position at 75% vertically */
-      rgba(19, 171, 191, 1) 0%,   /* Blue color at the center */
-      rgba(9, 60, 66, 1) 10%,      /* Darker blue at 10% */
-      rgba(0, 0, 0, 1) 40%          /* Black at the edges */
+      ellipse at center 82%, 
+      rgba(19, 171, 191, 1) 0%,   
+      rgba(9, 60, 66, 1) 10%,     
+      rgba(0, 0, 0, 1) 40%          
     );
 
     background-size: 400% 100%;
     background-position: 50% 50%;
+  } */
+
+  .background-gradient {
+    background: transparent;
+    background-size: 400% 100%;
+    background-position: 50% 50%;
+    
   }
 
   .fade-to-black::after {
@@ -66,18 +101,8 @@
 
   
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: "Open Sans", sans-serif;
-}
+
 
 @layer utilities {
   .text-balance {
@@ -103,6 +128,12 @@ body {
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
   ::-webkit-scrollbar {
     display: none; /* Hides the scrollbar */
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
   }
 }
 
