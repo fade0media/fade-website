@@ -14,6 +14,10 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+      // backdropBlur: {
+      //   sm: '4px',
+      //   lg: '16px',
+      // },
   		backgroundImage: {
   			'card-gradient': 'radial-gradient(circle at top right, #CDE7AA 0%, #EBB76E 26%, #CB755B 54%, #463380 100%)'
   		},

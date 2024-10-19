@@ -7,7 +7,7 @@ import { AlignJustify, ArrowUpRight, X as XIcon } from "lucide-react";
 const menuItems = [
   { id: 1, label: "Home", href: "/" },
   { id: 2, label: "About", href: "/about" },
-  { id: 3, label: "Services", href: "#" },
+  { id: 3, label: "Services", href: "/services" },
   { id: 4, label: "Projects", href: "#" },
   
 ];
@@ -40,10 +40,10 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50  w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4 backdrop-blur-md ">
+    <header className="fixed left-0 top-0 z-30  w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4 backdrop-blur-md ">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <a className="text-lg flex items-center font-bold" href="/">
-          fade.
+          Logo
         </a>
 
         <ul className="md:flex h-full items-center justify-center gap-8 text-md hidden ">
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
       {/* Mobile menu */}
       {(hamburgerMenuIsOpen || isFadingOut) && (
         <nav
-          className={`fixed top-14 h-screen py-8 left-0 z-50 w-full backdrop-blur-lg bg-black/70 transition-transform`}
+          className={`fixed top-14 h-screen py-8 left-0 z-50 w-full bg-black/70 backdrop-blur-lg transition-transform`}
         >
           <ul className="flex flex-col">
             {menuItems.map((item, index) => (
@@ -100,6 +100,7 @@ const Header: React.FC = () => {
                   {item.label}
                 </a>
               </li>
+              
             ))}
           </ul>
         </nav>
