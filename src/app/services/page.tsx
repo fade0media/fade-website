@@ -20,10 +20,10 @@ const ImageSlider: React.FC = () => {
     useEffect(() => {
       gsap.registerPlugin(ScrollTrigger);
   
-      const slides = gsap.utils.toArray('.slide');
+      const slides = gsap.utils.toArray<HTMLElement>('.slide');
       const getRatio = (el: HTMLElement) => window.innerHeight / (window.innerHeight + el.offsetHeight);
   
-      slides.forEach((slide: any, i: number) => {
+      slides.forEach((slide, i) => {
         const bg = slide.querySelector('.background');
         const content = slide.querySelector('.content');
         const tl = gsap.timeline({
