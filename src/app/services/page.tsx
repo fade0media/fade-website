@@ -55,7 +55,7 @@ const ImageSlider: React.FC = () => {
         <section className="min-h-[50vh] flex flex-col items-start justify-center mx-8 md:mx-16 md:flex-row md:items-center md:justify-between">
         {/* <p className=' text-xs tracking-widest mb-4 text-teal-200'>WEB DESIGN AGENCY</p> */}
           <h1 className='text-5xl font-bold mb-4 md:text-7xl'>Our Services</h1>
-          <p className='text-gray-400  max-w-md md:text-lg text-left'>Explore our wide range of digital services! We promise you won't be disappointed.</p>
+          <p className='text-gray-400  max-w-md md:text-lg text-left'>Explore our wide range of digital services! We promise you won&apos;t be disappointed.</p>
         </section>
   
         <section className="flex flex-col w-full relative z-10">
