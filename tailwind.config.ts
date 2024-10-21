@@ -26,6 +26,11 @@ const config: Config = {
   			foreground: 'var(--foreground)'
   		},
   		keyframes: {
+			scroll: {
+				to: {
+				  transform: "translate(calc(-50% - 0.5rem))",
+				},
+			  },
   			fadeIn: {
   				'0%': {
   					opacity: '0',
@@ -81,7 +86,8 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			
   		},
   		animation: {
   			fadeIn: 'fadeIn 0.5s ease-out forwards',
@@ -89,7 +95,8 @@ const config: Config = {
   			'slide-diagonal': 'slideDiagonal 5s ease-out forwards',
   			rotate: 'rotate 15s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			scroll: 'scroll 40s forwards linear infinite'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -98,7 +105,10 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("@anishshobithps/tailwind-breakpoints"), require('tailwind-hamburgers'), require("tailwindcss-animate"),
+  plugins: [require("@anishshobithps/tailwind-breakpoints"), 
+			require('tailwind-hamburgers'), 
+			require("tailwindcss-animate"),
+			addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
@@ -123,4 +133,15 @@ const config: Config = {
     },
   ]
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+	let allColors = flattenColorPalette(theme("colors"));
+	let newVars = Object.fromEntries(
+	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+	);
+   
+	addBase({
+	  ":root": newVars,
+	});
+  }
 export default config;

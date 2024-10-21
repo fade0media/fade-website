@@ -4,6 +4,32 @@
 
 * {
   scroll-behavior: smooth;
+  /* cursor: none; */
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    width: 8px; /* size */
+    height: 8px; /* size */
+    background-color: #463380; /* Replace with your primary color */
+}
+
+.cursor-dot-outline {
+    width: 40px; /* size */
+    height: 40px; /* size */
+    background-color: rgba(255, 255, 255, 0.5); /* Replace with your primary light color */
 }
 .contact {
   background-color: black;
@@ -122,6 +148,18 @@ body {
   background-position: 50% 50%;
 }
 
+.background-gradient-1 {
+  background: radial-gradient(
+    ellipse at center 60%, /* Center position of the gradient, horizontal and lower */
+    rgba(19, 171, 191, 1) 0%,   /* Blue color at the center */
+    #463380 10%,     /* Darker blue at 30% */
+    rgba(0, 0, 0, 1) 30%         /* Black at the edges */
+  );
+  background-size: 100% 100%;
+  
+  /* background-position: 50% 0%; */
+}
+
 
 .mask-gradient {
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
@@ -134,12 +172,12 @@ body {
 .fade-to-black::after {
   content: '';
   position: absolute;
-  z-index: 50;
+  z-index: 20;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%); /* Fades to black */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%); /* Fades to black */
   pointer-events: none; /* Allows clicks to pass through */
 }
 
@@ -163,6 +201,13 @@ body {
     background-position: 50% 50%;
     
   }
+
+  .background-gradient-1 {
+    background: transparent;
+    
+    
+  }
+
 
   .fade-to-black::after {
     content: '';

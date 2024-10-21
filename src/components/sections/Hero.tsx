@@ -1,11 +1,13 @@
 import React from 'react'
 
 import Button from '@/components/ui/Button'
+
 const Hero = () => {
     return (
         <div className='flex flex-col justify-center  items-center text-center mt-32 relative z-20 mx-8 md:mx-16'>
+            {/* <StarsBackground /> */}
             <p className='text-gray-400 text-xs tracking-widest'>WEB DESIGN AGENCY</p>
-            <h1 className="px-1 bg-gradient-to-br from-white from-30% to-white/40  bg-clip-text py-6 text-5xl font-normal leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Digital Marketing
+            <h1 className="px-1 bg-gradient-to-br from-white from-30% to-white/40  bg-clip-text py-6 text-5xl font-regular leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Digital Marketing
                 <br className="hidden md:block" /> Done Right.</h1>
 
             <p className='text-gray-400 text-balance md:text-xl tracking-tight mb-10'>Beautifully designed, animated components and templates built with

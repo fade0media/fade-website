@@ -4,8 +4,10 @@
 import About from "@/components/sections/About";
 import CTA from "@/components/sections/CTA";
 import FAQ from "@/components/sections/FAQ";
+import Clients from "@/components/sections/Clients"
 import Hero from "@/components/sections/Hero";
-import Services from "@/components/sections/Services";
+import Services1 from "@/components/sections/Services1";
+import { StarsBackground } from "@/components/ui/StarsBackground";
 //import { StarsBackground } from "@/components/ui/StarsBackground";
 
 export default function Home() {
@@ -20,7 +22,7 @@ export default function Home() {
       ) : ( */}
         <div className={`flex flex-col justify-center items-center background-gradient hero-bg transition-opacity  w-full`}>
           
-          {/* <StarsBackground /> */}
+          <StarsBackground />
           
           <Hero />
          
@@ -29,7 +31,8 @@ export default function Home() {
           
         </div>
         <About />
-        <Services />
+        <Services1 />
+        <Clients />
         <FAQ />
         <CTA />
         {/* <Services /> */}
