@@ -32,7 +32,7 @@
     background-color: rgba(255, 255, 255, 0.5); /* Replace with your primary light color */
 }
 .contact {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 
   background-image: 
     radial-gradient(circle at 50% 1%, rgba(0, 0, 0, 0) 1%, black 100%), /* Vignette effect */
@@ -40,6 +40,13 @@
   
   /* background-repeat: no-repeat; */
   
+
+}
+.gradient-quadrant {
+  background: radial-gradient(circle at top right
+  , #96deff 0%,
+   black 70%
+   );
 }
 .about {
   background-color: black;

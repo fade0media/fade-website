@@ -40,7 +40,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-30 w-full border-b border-zinc-700 border-opacity-50 md:px-10 lg:px-16 px-4 ">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-700 border-opacity-0 md:px-10 lg:px-16 px-4 ">
       <div className="container mx-auto flex h-14 items-center justify-between px-4 backdrop-blur-md ">
         <a className="text-lg flex items-center font-bold" href="/">
           Logo

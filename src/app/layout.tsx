@@ -33,7 +33,7 @@ export default function RootLayout({
       
       <body  
       >
-        <AnimatedCursor 
+        {/* <AnimatedCursor 
         innerSize={8}
         outerSize={35}
        
@@ -46,7 +46,7 @@ export default function RootLayout({
         }}
         innerStyle={{
           backgroundColor: '#5fbccf'
-        }}/>
+        }}/> */}
         <Header />
         {children}
         <Footer />

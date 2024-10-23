@@ -4,11 +4,12 @@ import Link from 'next/link';
 import phone from "../../public/full-2.png";
 import Service from '@/components/ui/Service';
 import { ArrowUpRight } from 'lucide-react';
+//import Spline from '@splinetool/react-spline/next';
 
 
 const Services1 = () => {
     return (
-        <section className='flex flex-col items-center justify-center gap-12 mx-8 md:mx-24'>
+        <section className='flex flex-col items-center justify-center gap-12 mx-8 md:mx-24 relative z-50 mt-16'>
             
             <div className='flex justify-between items-start sm:flex-col sm:justify-center sm:items-center '>
             <div className="flex flex-col justify-start items-start gap-3 sm:items-center">
@@ -20,9 +21,9 @@ const Services1 = () => {
             </div>
             <Link
                     href="#"
-                    className='bg-white text-black whitespace-nowrap mt-4 px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-lg rounded-full font-semibold cursor-pointer'
+                    className='bg-white md:hidden text-black whitespace-nowrap mt-4 px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-lg rounded-full font-semibold cursor-pointer'
                 >
-                    View All
+                    View All Services
                     <ArrowUpRight className='w-4 h-4' />
                 </Link>
 
@@ -43,12 +44,13 @@ const Services1 = () => {
                         alt="Picture of the author"
                         height={1150}
                     />
-                    <div className='absolute bottom-16 left-1/2 -translate-x-1/2 z-50 hidden'>
+                    
+                    <div className='absolute bottom-4 2xl:bottom-24 left-1/2 -translate-x-1/2 z-50 hidden md:flex'>
                         <Link
                             href="#"
                             className='bg-white text-black whitespace-nowrap px-4 py-3 flex justify-center items-center gap-2 text-lg rounded-full font-semibold cursor-pointer'
                         >
-                            View All
+                            View All Services
                             <ArrowUpRight className='w-4 h-4' />
                         </Link>
                     </div>

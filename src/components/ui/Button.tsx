@@ -8,7 +8,7 @@ interface ButtonProps {
 }
 const Button = ({ name, link }: ButtonProps) => {
   return (
-    <Link href={link} className='bg-white text-black relative z-50 flex gap-2 hover:text-white hover:bg-gradient-to-br from-pink-500 via-orange-300 to-violet-600 justify-center whitespace-nowrap  items-center py-2 px-3 text-xs rounded-full font-semibold cursor-pointer'>
+    <Link href={link} className='bg-white text-black relative z-50 flex gap-2 hover:text-sky-400 justify-center whitespace-nowrap  items-center py-3 px-4 text-sm rounded-full font-semibold cursor-pointer'>
         {name}
         <ArrowUpRight className='w-4 h-4'/>
     </Link>
