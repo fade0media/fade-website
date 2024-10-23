@@ -7,10 +7,10 @@ import FAQ from "@/components/sections/FAQ";
 import Clients from "@/components/sections/Clients"
 import Hero from "@/components/sections/Hero";
 import Services1 from "@/components/sections/Services1";
-import { StarsBackground } from "@/components/ui/StarsBackground";
+//import { StarsBackground } from "@/components/ui/StarsBackground";
 import Animation from "@/components/ui/ParticleSystem";
-import { useRef, useEffect } from "react";
-import Spline from "@splinetool/react-spline/next";
+//import { useRef, useEffect } from "react";
+//import Spline from "@splinetool/react-spline/next";
 //import { StarsBackground } from "@/components/ui/StarsBackground";
 
 export default function Home() {

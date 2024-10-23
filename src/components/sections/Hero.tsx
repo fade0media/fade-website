@@ -12,7 +12,7 @@ const Hero = () => {
 
             <p className='text-gray-300  text-balance md:text-2xl tracking-tight mb-6 text-left py-2'>Dynamic. Seamless. Robust.&nbsp; 
                 <br className='md:hidden'/>
-                That's our motto.</p>
+                That&apos;s our motto.</p>
                
 
 

@@ -6,7 +6,7 @@ import Stats from 'stats.js';
 const Animation: React.FC = () => {
     const containerRef = useRef<HTMLDivElement | null>(null);
     let scene: THREE.Scene, camera: THREE.PerspectiveCamera, renderer: THREE.WebGLRenderer;
-    let stats: Stats;
+    //let stats: Stats;
     let mouseX = 0, mouseY = 0;
     let windowHalfX: number, windowHalfY: number;
     const materials: THREE.PointsMaterial[] = []; // Moved to the top
@@ -53,7 +53,7 @@ const Animation: React.FC = () => {
         geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
         parameters.forEach((param) => {
-            const color = "#ffffff";
+            //const color = "#ffffff";
             const size = param[1];
 
             materials.push(new THREE.PointsMaterial({ size }));

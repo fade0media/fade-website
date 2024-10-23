@@ -4,7 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
-import AnimatedCursor from "react-animated-cursor"
+//import AnimatedCursor from "react-animated-cursor"
 
 
 
