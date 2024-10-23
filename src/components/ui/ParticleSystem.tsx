@@ -1,7 +1,7 @@
 // Animation.tsx
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import Stats from 'stats.js';
+//import Stats from 'stats.js';
 
 const Animation: React.FC = () => {
     const containerRef = useRef<HTMLDivElement | null>(null);

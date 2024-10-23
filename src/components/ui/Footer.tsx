@@ -35,7 +35,7 @@ const Footer = () => {
         
     ]
     return (
-        <footer className="text-gray-600 body-font px-12 w-full py-8">
+        <footer className="text-gray-600 body-font px-12 w-full py-8 relative z-50">
             <div className="flex justify-between items-start flex-wrap gap-4 px-5">
                 <div className="flex flex-col justify-center items-start">
                     <a className="flex title-font font-medium items-start justify-center text-gray-900">

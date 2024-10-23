@@ -10,7 +10,7 @@ import Link from "next/link";
   
 function FAQ() {
     return (
-        <section className='flex py-16 flex-col justify-center items-center px-8 md:px-16 xl:px-24 2xl:px-48 w-full lg:flex-row '>
+        <section className='relative z-50 flex py-16 flex-col justify-center items-center px-8 md:px-16 xl:px-24 2xl:px-48 w-full lg:flex-row '>
         <div className='flex justify-between items-center mb-8 w-full lg:flex-col lg:items-start gap-4 lg:w-1/2 lg:mr-8'>
             <div className='flex flex-col justify-between w-3/4 items-start gap-2'>
                 <h2 className='text-3xl font-semibold md:text-4xl lg:text-5xl'>FAQs</h2>
