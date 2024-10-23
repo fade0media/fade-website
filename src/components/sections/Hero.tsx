@@ -10,13 +10,15 @@ const Hero = () => {
             <h1 className="bg-gradient-to-br from-[#96deff] from-30% to-gray-300 text-left bg-clip-text py-6 text-5xl font-regular leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-9xl">Transform your
                 <br className="hidden md:block" /> Digital Experiences.</h1>
 
-            <p className='text-gray-300  text-balance md:text-2xl tracking-tight mb-6 text-left py-2'>Dynamic. Seamless. Robust.&nbsp; 
+            <div className="flex md:flex-col justify-center items-center gap-8 md:items-start md:gap-6">
+            <p className='text-gray-300  text-balance md:text-2xl tracking-tight text-left py-2'>Dynamic. Seamless. Robust.&nbsp; 
                 <br className='md:hidden'/>
                 That&apos;s our motto.</p>
                
 
 
             <Button link="#" name="Learn More"/>
+            </div>
             
             {/* <div className=" flex w-full fade-to-black max-w-5xl  items-center justify-center my-16">
                 <div className="relative z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-xl border border-slate-800 p-[1.5px]">
