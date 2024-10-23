@@ -70,10 +70,11 @@ const Animation: React.FC = () => {
         // Event listeners for screens wider than 768px
         if (window.innerWidth >= 768) {
             document.addEventListener('mousemove', onDocumentMouseMove);
+            document.addEventListener('touchstart', onDocumentTouchStart);
+        document.addEventListener('touchmove', onDocumentTouchMove);
         }
 
-        document.addEventListener('touchstart', onDocumentTouchStart);
-        document.addEventListener('touchmove', onDocumentTouchMove);
+       
 
         window.addEventListener('resize', onWindowResize);
     };
@@ -142,8 +143,12 @@ const Animation: React.FC = () => {
         // Re-add or remove the mousemove listener based on screen size
         if (width >= 768) {
             document.addEventListener('mousemove', onDocumentMouseMove);
+            document.addEventListener('touchstart', onDocumentTouchStart);
+            document.addEventListener('touchmove', onDocumentTouchMove);
         } else {
             document.removeEventListener('mousemove', onDocumentMouseMove);
+            document.removeEventListener('touchstart', onDocumentTouchStart);
+            document.removeEventListener('touchmove', onDocumentTouchMove);
         }
     };
 
