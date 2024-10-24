@@ -8,10 +8,10 @@ import Clients from "@/components/sections/Clients"
 import Hero from "@/components/sections/Hero";
 import Services1 from "@/components/sections/Services1";
 //import { StarsBackground } from "@/components/ui/StarsBackground";
-import Animation from "@/components/ui/ParticleSystem";
+//import Animation from "@/components/ui/ParticleSystem";
 //import { useRef, useEffect } from "react";
 //import Spline from "@splinetool/react-spline/next";
-//import { StarsBackground } from "@/components/ui/StarsBackground";
+import { StarsBackground } from "@/components/ui/StarsBackground";
 
 export default function Home() {
   
@@ -23,9 +23,9 @@ export default function Home() {
           Fade.
         </div>
       ) : ( */}
-        <div className={`flex flex-col bg-red-400 justify-center items-start background-gradient hero-bg transition-opacity  w-full`}>
+        <div className={`flex flex-col  justify-center items-start  hero-bg transition-opacity  w-full`}>
           
-          {/* <StarsBackground /> */}
+          <StarsBackground />
           <div className="absolute right-0 top-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] z-40 gradient-quadrant rounded-bl-full">
           {/* <Spline
         scene="https://prod.spline.design/srz2hiTvYWCwQHYf/scene.splinecode" 
@@ -33,7 +33,7 @@ export default function Home() {
 
             
           </div>
-          <Animation />
+          {/* <Animation /> */}
           <Hero />
          
           

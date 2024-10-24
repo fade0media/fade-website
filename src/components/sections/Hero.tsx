@@ -7,7 +7,7 @@ const Hero = () => {
         <div className='flex flex-col justify-center items-start text-center mt-32 relative z-50 mx-8 md:mt-72 md:mx-16 lg:mx-36d'>
             {/* <StarsBackground /> */}
             {/* <p className='text-gray-400 text-xs tracking-widest'>WEB DESIGN AGENCY</p> */}
-            <h1 className="bg-gradient-to-br from-[#96deff] from-30% to-gray-300 text-left bg-clip-text py-6 text-5xl font-regular leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-9xl">Transform your
+            <h1 className="bg-gradient-to-br from-[#96deff] from-30% to-gray-300 text-left bg-clip-text py-6 text-5xl font-bold leading-none tracking-tight text-transparent text-balance sm:text-6xl md:text-7xl lg:text-9xl">Transform your
                 <br className="hidden md:block" /> Digital Experiences.</h1>
 
             <div className="flex md:flex-col justify-center items-center gap-8 md:items-start md:gap-6">
