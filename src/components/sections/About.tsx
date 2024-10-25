@@ -1,4 +1,4 @@
-import AboutText from '@/components/ui/AboutText'
+// import AboutText from '@/components/ui/AboutText'
 import React from 'react'
 
 const About = () => {
