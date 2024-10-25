@@ -4,14 +4,16 @@
 import About from "@/components/sections/About";
 import CTA from "@/components/sections/CTA";
 import FAQ from "@/components/sections/FAQ";
-import Clients from "@/components/sections/Clients"
+// import Clients from "@/components/ui/Clients"
 import Hero from "@/components/sections/Hero";
 import Services1 from "@/components/sections/Services1";
 //import { StarsBackground } from "@/components/ui/StarsBackground";
-//import Animation from "@/components/ui/ParticleSystem";
+import Animation from "@/components/ui/ParticleSystem";
 //import { useRef, useEffect } from "react";
 //import Spline from "@splinetool/react-spline/next";
-import { StarsBackground } from "@/components/ui/StarsBackground";
+// import { StarsBackground } from "@/components/ui/StarsBackground";
+// import Hero1 from "@/components/sections/Hero1";
+// import Testimonials from "@/components/sections/Testimonials";
 
 export default function Home() {
   
@@ -23,28 +25,32 @@ export default function Home() {
           Fade.
         </div>
       ) : ( */}
-        <div className={`flex flex-col  justify-center items-start  hero-bg transition-opacity  w-full`}>
+        <div className={`flex flex-col justify-center items-center w-full px-8`}>
           
-          <StarsBackground />
-          <div className="absolute right-0 top-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] z-40 gradient-quadrant rounded-bl-full">
-          {/* <Spline
-        scene="https://prod.spline.design/srz2hiTvYWCwQHYf/scene.splinecode" 
-      /> */}
+          {/* <StarsBackground /> */}
+          {/* <div className="absolute right-0 top-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] z-40 gradient-quadrant rounded-bl-full">
+          
 
             
-          </div>
-          {/* <Animation /> */}
+          </div> */}
+
+          {/* <div className="absolute right-1/2 -top-96 translate-x-1/2 w-[250px] h-[250px] md:w-full md:h-full z-40 gradient-quadrant1 rounded-full">
+          
+
+            
+          </div> */}
+          <Animation />
           <Hero />
          
-          
+          <About />
+        <Services1 />
+        {/* <Testimonials /> */}
+        <FAQ />
+        <CTA />
           
           
         </div>
-        <About />
-        <Services1 />
-        <Clients />
-        <FAQ />
-        <CTA />
+        
         {/* <Services /> */}
       {/* )} */}
     </>

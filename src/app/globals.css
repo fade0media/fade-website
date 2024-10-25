@@ -48,6 +48,13 @@
    black 70%
    );
 }
+
+.gradient-quadrant1 {
+  background: radial-gradient(circle at center
+  , #96deff 0%,
+   black 70%
+   );
+}
 .about {
   background-color: black;
 

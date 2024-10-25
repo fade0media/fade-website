@@ -71,6 +71,14 @@ const config: Config = {
   					transform: 'rotate(-360deg) scale(10)'
   				}
   			},
+			  "rotate-1": {
+				'0%': {
+					transform: 'rotate(0deg) '
+				},
+				'100%': {
+					transform: 'rotate(-360deg)'
+				}
+			},
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -94,9 +102,10 @@ const config: Config = {
   			fadeOut: 'fadeOut 0.5s ease-out forwards',
   			'slide-diagonal': 'slideDiagonal 5s ease-out forwards',
   			rotate: 'rotate 15s linear infinite',
+			'rotate-1': 'rotate-1 30s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-			scroll: 'scroll 40s forwards linear infinite'
+			scroll: 'scroll 10s forwards linear infinite'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
