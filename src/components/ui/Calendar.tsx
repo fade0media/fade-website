@@ -13,7 +13,7 @@ const Calendar = () => {
         calLink="sanjana-bhat02/quick-chat"
         // style={{ width: "100%", height: "100%", overflow: "hidden" }}
         config={{ "layout": "month_view" }}
-        className='w-full'
+        className='w-full mt-8'
 
 
     />;

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -38,7 +40,7 @@ const Animation: React.FC = () => {
 
         // Geometry setup
         const geometry = new THREE.BufferGeometry();
-        const particleCount = 500;
+        const particleCount = 200;
         const positions = new Float32Array(particleCount * 3);
 
         for (let i = 0; i < particleCount; i++) {

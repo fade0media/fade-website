@@ -35,7 +35,7 @@ const Footer = () => {
         
     ]
     return (
-        <footer className="text-gray-600 body-font px-12 w-full py-8 relative z-50 backdrop-blur-md bg-black/70 border rounded-t-2xl">
+        <footer className="text-gray-600 body-font px-12 w-full py-8 relative z-40 backdrop-blur-md bg-black/70 rounded-t-2xl">
             <div className="flex justify-between items-start flex-wrap gap-4 px-5">
                 <div className="flex flex-col justify-center items-start">
                     <a className="flex title-font font-medium items-start justify-center text-gray-900">
@@ -83,6 +83,16 @@ const Footer = () => {
                     <p>Privacy Policy</p>
                     </div> */}
                 </div>
+
+                <a className="flex title-font font-medium items-start justify-center text-gray-900">
+                        <Image src={logo}
+                            alt="Picture of the author"
+                            // width={90}
+                        //   height={150}
+                        className='w-full'
+                        />
+                        {/* <img src="../../public/logo-white.jpg" alt="" /> */}
+                    </a>
             </div>
         </footer>
     )

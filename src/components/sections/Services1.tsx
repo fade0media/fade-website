@@ -9,28 +9,32 @@ import { ArrowUpRight } from 'lucide-react';
 
 const Services1 = () => {
     return (
-        <section className='flex flex-col items-center justify-center gap-12 relative z-40 mt-16'>
+        <section className='flex flex-col items-center justify-center gap-12 relative z-40 px-8 md:px-24 md:mt-36'>
             
-            <div className='flex justify-between items-start sm:flex-col sm:justify-center sm:items-center '>
-            <div className="flex flex-col justify-start items-start gap-3 sm:items-center">
+            <div className='flex flex-col justify-center sm:items-center items-start sm:gap-2 gap-6 '>
+            {/* <div className="flex flex-col justify-center gap-3 items-center"> */}
                 <h2 className='text-3xl font-semibold md:text-4xl lg:text-5xl text-left sm:text-center'>Your Needs,&nbsp;
-                    <br className='sm:hidden'/>
+                    {/* <br className='sm:hidden'/> */}
                     Our Priority</h2>
-                <p className='text-gray-400 md:text-lg text-left text-balance sm:text-center'>Let us handle the details, while you enjoy the results.</p>
                 
-            </div>
+                
+            {/* </div> */}
+            <div className="flex justify-between items-center sm:flex-col gap-4">
+            <p className='text-gray-400 md:text-lg text-balance text-left sm:text-center'>Let us handle the details, while you enjoy the results.</p>
             <Link
                     href="#"
-                    className='bg-white md:hidden text-black whitespace-nowrap mt-4 px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-lg rounded-full font-semibold cursor-pointer'
+                    className='bg-white md:hidden text-black whitespace-nowrap sm:mt-6 px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-sm rounded-full font-semibold cursor-pointer'
                 >
-                    View All Services
+                    View All
                     <ArrowUpRight className='w-4 h-4' />
                 </Link>
+            </div>
+            
 
             </div>
 
 
-            <div className='flex flex-col justify-center items-center gap-16 lg:mx-24 sm:flex-row mx-12'>
+            <div className='flex flex-col justify-center items-center gap-16 sm:flex-row'>
                 {/* First flex child (will be reordered to 2 on md screens) */}
                 <div className='flex flex-col items-center justify-center gap-16 order-2 md:order-2'>
                     <Service />
@@ -38,12 +42,14 @@ const Services1 = () => {
                 </div>
 
                 {/* Second flex child (will be reordered to 1 on md screens) */}
-                <div className='fade-to-black relative order-1 sm:order-2 '>
+                <div className='fade-to-black relative order-1 sm:order-2 flex justify-center items-center'>
+                    <div className='w-3/4'>
                     <Image
                         src={phone}
                         alt="Picture of the author"
                         height={1150}
                     />
+                    </div>
                     
                     <div className='absolute bottom-4 2xl:bottom-24 left-1/2 -translate-x-1/2 z-50 hidden md:flex'>
                         <Link

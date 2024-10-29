@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className="rounded-md antialiased max-w-xs relative overflow-hidden flex justify-center items-center">
+    <div className="rounded-md antialiased w-5/6 max-w-2xl relative overflow-hidden flex justify-center items-center">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

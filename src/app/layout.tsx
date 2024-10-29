@@ -3,9 +3,10 @@ import localFont from 'next/font/local'
 import "./globals.css";
 
 import Header from "@/components/ui/Header";
-import Footer from "@/components/ui/Footer";
-//import AnimatedCursor from "react-animated-cursor"
-
+//import Footer from "@/components/ui/Footer";
+import AnimatedCursor from "react-animated-cursor"
+import Animation from "@/components/ui/ParticleSystem";
+import Footer1 from "@/components/ui/Footer1";
 
 
 
@@ -33,7 +34,7 @@ export default function RootLayout({
       
       <body  
       >
-        {/* <AnimatedCursor 
+        <AnimatedCursor 
         innerSize={8}
         outerSize={35}
        
@@ -46,10 +47,11 @@ export default function RootLayout({
         }}
         innerStyle={{
           backgroundColor: '#5fbccf'
-        }}/> */}
+        }}/>
+        <Animation />
         <Header />
         {children}
-        <Footer />
+        <Footer1 />
       </body>
     </html>
   );

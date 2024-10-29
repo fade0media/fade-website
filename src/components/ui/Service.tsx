@@ -9,8 +9,8 @@ const Service = () => {
             </svg>
 
 
-            <h2 className='text-left text-2xl bg-gradient-to-br from-white from-30% to-white/40  bg-clip-text text-transparent'>Website Development</h2>
-            <p className='text-gray-400 text-md'>Bringing your vision to life with seamless, custom web solutions</p>
+            <h2 className='text-left md:text-3xl text-2xl bg-gradient-to-br from-white from-30% to-sky-200  bg-clip-text text-transparent'>Website Development</h2>
+            <p className='text-gray-400 text-md md:text-xl'>Bringing your vision to life with seamless, custom web solutions</p>
         </div>
 
     )
