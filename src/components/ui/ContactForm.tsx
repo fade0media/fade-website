@@ -30,7 +30,7 @@ const ContactForm: FC = () => {
         throw new Error('Failed to send email');
       }
 
-      const result = await response.json();
+      //const result = await response.json();
       setIsLoading(false);
       setIsSent(true);
     } catch (error) {

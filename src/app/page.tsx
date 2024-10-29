@@ -5,7 +5,7 @@ import About from "@/components/sections/About";
 //import CTA from "@/components/sections/CTA";
 import FAQ from "@/components/sections/FAQ";
 // import Clients from "@/components/ui/Clients"
-import Hero from "@/components/sections/Hero";
+//import Hero from "@/components/sections/Hero";
 import Services1 from "@/components/sections/Services1";
 //import { StarsBackground } from "@/components/ui/StarsBackground";
 import Animation from "@/components/ui/ParticleSystem";
