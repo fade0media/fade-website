@@ -7,7 +7,7 @@ import FadeInText from '@/components/ui/FadeInText';
 
 const Testimonials = () => {
   const ref1 = useRef(null);
-  const ref2 = useRef(null);
+  //const ref2 = useRef(null);
 
   // Check if each testimonial is in view
   const isInView1 = useInView(ref1, { once: true });
