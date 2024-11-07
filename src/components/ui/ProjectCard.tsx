@@ -2,7 +2,7 @@ import React from 'react'
 // import Image from 'next/image'
 const ProjectCard = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-6'>
+    <div className='flex flex-col justify-center items-center gap-6 w-full'>
         <div className='w-full'>
         {/* <Image
         alt="Product"
