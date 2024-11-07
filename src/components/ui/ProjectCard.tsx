@@ -17,9 +17,9 @@ const ProjectCard = () => {
         <img className='w-full h-full rounded-3xl' src="https://resourceboy.com/wp-content/uploads/2024/04/iphone-15-mockup-with-shadow-overlays-in-4-sights-thumbnail.jpg" alt="" />
         </div>
 
-        <div className="flex text-xl justify-between items-center w-full">
-            <h3 className=''>INSERT PROJECT NAME HERE</h3>
-            <p>2024</p>
+        <div className="flex text-xl justify-between items-start w-full">
+            <h3 className='w-3/4 text-lg sm:text-xl'>INSERT PROJECT NAME HERE</h3>
+            <p className='text-lg sm:text-xl'>2024</p>
         </div>
 
         <div className="flex justify-start gap-3 items-center w-full">
