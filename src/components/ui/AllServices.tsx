@@ -96,7 +96,7 @@ export function AllServices() {
         // const y = useTransform(scrollYProgress, [startFade, endFade], [0, -100]);
 
         return (
-          <div className="w-full sticky top-[20px]">
+          <div className="w-full sticky top-[20px]" key={index}>
           <motion.div
             key={index}
             className="card rounded-xl"

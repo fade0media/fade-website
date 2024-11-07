@@ -26,7 +26,7 @@ export const VerticalMovingCards = ({
   useEffect(() => {
     // Add duplicated items to create the loop effect
     if (scrollerRef.current && scrollerRef.current.childElementCount === items.length) {
-      items.forEach((item) => {
+      items.forEach((_) => {
         const duplicatedItem = document.createElement("li");
         duplicatedItem.innerHTML = scrollerRef.current!.innerHTML;
         scrollerRef.current!.appendChild(duplicatedItem);

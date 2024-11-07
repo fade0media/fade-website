@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import Service1 from '@/components/ui/Service1';
@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-const page: React.FC = () => {
+const Page = () => {
   // useEffect( () => {
 
   //   initializeLenis();
@@ -44,5 +44,5 @@ const page: React.FC = () => {
     );
   };
   
-  export default page;
+  export default Page;
 
