@@ -1,7 +1,7 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 import { FormData } from '@/components/ui/ContactForm';
-
+import Lenis from '@studio-freight/lenis'
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
@@ -22,4 +22,22 @@ export function sendEmail(data: FormData) {
     .catch((err) => {
       alert(err);
     });
+}
+
+export function initializeLenis () {
+  const lenis = new Lenis()
+
+
+
+    function raf(time: number) {
+
+      lenis.raf(time)
+
+      requestAnimationFrame(raf)
+
+    }
+
+
+
+    requestAnimationFrame(raf)
 }

@@ -95,6 +95,10 @@ const config: Config = {
   					height: '0'
   				}
   			},
+			  scrollVertical: {
+				'0%': { transform: 'translateY(0)' },
+				'100%': { transform: 'translateY(-100%)' },  // Adjust for upward scroll
+			  },
 			
   		},
   		animation: {
@@ -105,7 +109,8 @@ const config: Config = {
 			'rotate-1': 'rotate-1 30s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-			scroll: 'scroll 10s forwards linear infinite'
+			scroll: 'scroll 10s forwards linear infinite',
+			'scroll-vertical': 'scrollVertical 100s linear infinite',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

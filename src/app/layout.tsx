@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
@@ -7,7 +8,8 @@ import Header from "@/components/ui/Header";
 import AnimatedCursor from "react-animated-cursor"
 import Animation from "@/components/ui/ParticleSystem";
 import Footer1 from "@/components/ui/Footer1";
-
+// import { initializeLenis } from "@/lib/utils";
+// import { useEffect } from "react";
 
 
 const satoshi = localFont({
@@ -29,6 +31,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en" className={satoshi.className}>
       

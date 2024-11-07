@@ -57,6 +57,56 @@
    );
    
 }
+/* .continer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 24px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+} */
+@keyframes scrollVertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.scroller {
+  --animation-duration: 100s; /* Default animation duration */
+  --animation-direction: normal; /* Default direction */
+}
+
+.animate-scroll-vertical {
+  animation: scrollVertical var(--animation-duration) linear infinite var(--animation-direction);
+}
+.card {
+  position: relative;
+  min-height: 550px;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #000000, #020809, #080509);
+  background-clip: padding-box;
+  border-radius: 25px;
+  /* padding: 40px; */
+
+}
+.card::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+  border-radius: 25px;
+}
+
+
 
 .hero-gradient1 {
   background: radial-gradient(circle at 100% 150%
@@ -113,6 +163,29 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%); /* Fades to black */
   pointer-events: none; /* Allows clicks to pass through */
 }
+
+.fade-to-black-1 {
+  position: relative; /* Ensure the div is positioned correctly for absolute elements */
+}
+
+.fade-to-black-1::after {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,      /* Solid black at the top */
+    rgba(0, 0, 0, 0) 20%,     /* Transparent near the top */
+    rgba(0, 0, 0, 0) 80%,     /* Transparent near the bottom */
+    rgba(0, 0, 0, 1) 100%     /* Solid black at the bottom */
+  );
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
 
 
 @media (max-width: 768px) { /* Tailwind's sm breakpoint */

@@ -2,7 +2,7 @@
 const nextConfig = {
     transpilePackages: ['three'],
     images: {
-        domains: ['images.unsplash.com'], // Add any additional domains if necessary
+        domains: ['images.unsplash.com', 'assets.aceternity.com', 'resourceboy.com'], // Add any additional domains if necessary
     },
 };
 

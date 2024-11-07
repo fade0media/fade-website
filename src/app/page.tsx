@@ -5,15 +5,16 @@ import About from "@/components/sections/About";
 //import CTA from "@/components/sections/CTA";
 import FAQ from "@/components/sections/FAQ";
 // import Clients from "@/components/ui/Clients"
-//import Hero from "@/components/sections/Hero";
+import Hero from "@/components/sections/Hero";
 import Services1 from "@/components/sections/Services1";
 //import { StarsBackground } from "@/components/ui/StarsBackground";
 import Animation from "@/components/ui/ParticleSystem";
 //import { useRef, useEffect } from "react";
 //import Spline from "@splinetool/react-spline/next";
 // import { StarsBackground } from "@/components/ui/StarsBackground";
-import Hero1 from "@/components/sections/Hero1";
+//import Hero1 from "@/components/sections/Hero1";
 import Testimonials from "@/components/sections/Testimonials";
+import { Projects } from "@/components/sections/Projects";
 //import TestimonialCards from "@/components/ui/TestimonialCards";
 
 export default function Home() {
@@ -41,11 +42,12 @@ export default function Home() {
             
           </div> */}
           <Animation />
-          <Hero1/>
+          <Hero/>
          
           <About />
         <Services1 />
         {/* <TestimonialCards /> */}
+        <Projects />
         <Testimonials />
         <FAQ />
         {/* <CTA /> */}
