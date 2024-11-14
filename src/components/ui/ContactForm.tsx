@@ -54,7 +54,7 @@ const ContactForm: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='max-w-lg mx-auto'>
+    <form onSubmit={handleSubmit(onSubmit)} className='max-w-lg '>
       <div className='mb-5'>
         <label htmlFor='name' className='mb-3 block text-base font-medium text-black'>
           Full Name

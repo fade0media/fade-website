@@ -1,14 +1,16 @@
-import CTA from '@/components/sections/CTA'
+// import CTA from '@/components/sections/CTA'
 import React from 'react'
 
 const Footer1 = () => {
   return (
     
-    <footer className="text-white body-font relative z-40 px-8 md:px-24 mx-auto hero-gradient1 py-8">
+    <footer className="text-white body-font relative z-40 px-8 md:px-24 mx-auto 
+    //hero-gradient1 
+    py-8">
         <div className='flex flex-col items-start justify-center'>
-        <CTA />
-        <p className='md:text-3xl text-xl mb-4 tracking-wide md:mb-6'>+91 89238 83879</p>
-        <p className='md:text-3xl text-xl mb-4 tracking-wide md:mb-12'>fademedia@gmail.com</p>
+        {/* <CTA /> */}
+        {/* <p className='md:text-3xl text-xl mb-4 tracking-wide md:mb-6'>+91 89238 83879</p>
+        <p className='md:text-3xl text-xl mb-4 tracking-wide md:mb-12'>fademedia@gmail.com</p> */}
   <div className="container flex items-start sm:flex-row flex-col mt-8">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
       
