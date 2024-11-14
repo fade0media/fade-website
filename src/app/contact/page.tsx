@@ -11,7 +11,7 @@ const page = () => {
     
     return (
         <div className='flex flex-col md:flex-row justify-between items-start px-8 md:px-24 relative z-40 w-full mt-16 md:mt-36 gap-16'>
-            {/* <StarsBackground /> */}
+           
             
             <div className="md:w-1/2 relative flex flex-col items-start justify-center">
       {/* Radial gradient for the container to give a faded look */}
