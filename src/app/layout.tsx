@@ -39,15 +39,17 @@ export default function RootLayout({
       >
         <AnimatedCursor 
         innerSize={8}
-        outerSize={35}
+        outerSize={8}
        
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={2}
+        outerAlpha={0}
+        innerScale={0.01}
+        outerScale={6}
+        trailingSpeed={1}
         outerStyle={{
-          backgroundColor: 'rgba(95, 207, 200, 0.2)',
+          backgroundColor: 'rgba(95, 207, 200, 0.5)',
           
         }}
+        showSystemCursor={true}
         innerStyle={{
           backgroundColor: '#5fbccf'
         }}/>

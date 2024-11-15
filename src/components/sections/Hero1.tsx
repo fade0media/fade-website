@@ -21,7 +21,7 @@ const Hero1 = () => {
             {/* <p className='text-gray-400 text-xs tracking-widest'>WEB DESIGN AGENCY</p> */}
             <div className='flex flex-col justify-between items-start'>
                 
-                <h1 className="whitespace-nowrap bg-gradient-to-br from-white text-left from-30% to-gray-300 bg-clip-text py-4 text-5xl font-bold leading-none tracking-tight text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Transform your&nbsp;
+                <h1 className="whitespace-nowrap bg-gradient-to-br from-white text-left from-30% to-red-600 bg-clip-text py-4 text-5xl font-bold leading-none tracking-tight text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Transform your&nbsp;
                     
                     <br className='hidden sm:block'/>
                     Digital Experiences

@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className="text-gray-600 body-font relative z-40 px-8 md:px-24">
+    <section className="text-gray-600 md:mt-24 body-font relative z-40 px-8 md:px-24">
   <div className="container flex pb-24 sm:flex-row justify-between flex-col items-start sm:items-center lg:gap-36 gap-8 md:gap-12">
     
     {/* <AboutText /> */}
