@@ -2,10 +2,10 @@
 import React from 'react'
 
 import Calendar from '@/components/ui/Calendar';
-import ContactForm from '@/components/ui/ContactForm';
+// import ContactForm from '@/components/ui/ContactForm';
 // import { Tabs, Tab } from '@/components/ui/Tabs';
 // import Button from '@/components/ui/Button';
-import { Phone, Mail } from 'lucide-react';
+// import { Phone, Mail } from 'lucide-react';
 
 const page = () => {
 
