@@ -10,12 +10,12 @@ import Link from "next/link";
   
 function FAQ() {
     return (
-        <section className='md:px-24 px-8 relative z-40 flex py-16 flex-col justify-center items-center w-full lg:flex-row '>
-        <div className='flex justify-between items-center mb-8 w-full lg:flex-col lg:items-start gap-4 lg:w-1/2 lg:mr-8'>
-            <div className='flex flex-col justify-between w-3/4 items-start gap-2'>
-                <h2 className='text-3xl font-semibold md:text-4xl lg:text-5xl'>FAQs</h2>
+        <section className='md:px-24 px-8 relative z-40 flex py-16 flex-col justify-center items-center w-full lg:flex-row lg:items-start lg:gap-48'>
+        <div className='flex flex-col justify-center items-center mb-8 w-full lg:flex-col lg:items-start gap-4 lg:w-1/2 lg:mr-8'>
+            <div className='flex flex-col justify-between w-full items-center lg:items-start gap-2'>
+                <h2 className='text-3xl lg:text-left text-center w-full font-semibold md:text-4xl lg:text-5xl'>Everything You Need to Know</h2>
         
-                <p className='text-gray-400 text-sm'>Have more questions?</p>
+                <p className='text-gray-400 text-lg'>Have more questions?</p>
             </div>
 
             <Link href="#" className='bg-white text-black whitespace-nowrap px-3 py-2 flex justify-center items-center gap-2 text-sm rounded-2xl font-semibold cursor-pointer'>

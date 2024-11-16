@@ -8,7 +8,7 @@ const About = () => {
   <div className="container flex pb-24 sm:flex-row justify-between flex-col items-start sm:items-center lg:gap-36 gap-8 md:gap-12">
     
     {/* <AboutText /> */}
-    <div className='lg:text-3xl text-white text-xl'>
+    <div className='md:text-3xl text-white text-xl'>
     <FadeInText text="We are a branding & digital studio based in Mangaluru, India,
      tackling complex visual and technological challenges for bold brands."/>
     </div>

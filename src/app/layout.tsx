@@ -7,7 +7,8 @@ import Header from "@/components/ui/Header";
 //import Footer from "@/components/ui/Footer";
 import AnimatedCursor from "react-animated-cursor"
 import Animation from "@/components/ui/ParticleSystem";
-import Footer1 from "@/components/ui/Footer1";
+// import Footer1 from "@/components/ui/Footer1";
+import Footer2 from "@/components/ui/Footer2";
 // import { initializeLenis } from "@/lib/utils";
 // import { useEffect } from "react";
 
@@ -21,6 +22,8 @@ const satoshi = localFont({
    
   ],
 })
+
+
 export const metadata: Metadata = {
   title: "Fade Media",
   description: "Fade Media",
@@ -34,9 +37,13 @@ export default function RootLayout({
   
   return (
     <html lang="en" className={satoshi.className}>
-      
+      {/* <head>
+      <link rel="icon" href="/favicon.svg" sizes="any" />
+      </head> */}
       <body  
+      className="tracking-[-0.025em]"
       >
+        
         <AnimatedCursor 
         innerSize={8}
         outerSize={8}
@@ -56,7 +63,7 @@ export default function RootLayout({
         <Animation />
         <Header />
         {children}
-        <Footer1 />
+        <Footer2 />
       </body>
     </html>
   );

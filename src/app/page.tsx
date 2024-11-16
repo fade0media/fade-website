@@ -2,7 +2,7 @@
 
 
 import About from "@/components/sections/About";
-//import CTA from "@/components/sections/CTA";
+import CTA from "@/components/sections/CTA";
 import FAQ from "@/components/sections/FAQ";
 // import Clients from "@/components/ui/Clients"
 // import Hero from "@/components/sections/Hero";
@@ -52,7 +52,7 @@ export default function Home() {
         <Projects />
         <Testimonials />
         <FAQ />
-        {/* <CTA /> */}
+        <CTA />
           
         {/* <div className="absolute right-0 bottom-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] z-50 hero-gradient1 rounded-bl-full">
           

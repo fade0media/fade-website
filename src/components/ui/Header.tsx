@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { AlignJustify, ArrowUpRight, X as XIcon } from "lucide-react";
+import Logo from "@/components/ui/Logo";
 
 
 const menuItems = [
@@ -42,9 +43,7 @@ const Header: React.FC = () => {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-700 border-opacity-0 md:px-10 lg:px-16 px-4 ">
       <div className="container mx-auto flex h-14 items-center justify-between px-4 backdrop-blur-md ">
-        <a className="text-xl flex items-center font-bold" href="/">
-          fade.
-        </a>
+        <Logo />
 
         <ul className="md:flex h-full items-center justify-center gap-8 text-md hidden backdrop-blur-md ">
           {menuItems.map((item) => (

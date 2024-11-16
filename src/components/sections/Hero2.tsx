@@ -20,7 +20,7 @@ import { cn } from '@/lib/utils'
 
 const Hero = () => {
     return (
-        <div className='hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-24 md:px-24 
+        <div className='md:h-[100vh] h-[75vh] hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-24 md:px-24 
         md:pb-48 pb-16
 '>
             {/* <StarsBackground /> */}
@@ -32,11 +32,11 @@ const Hero = () => {
                     )}
                 >
                     <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                        <span>Introducing Magic UI</span>
+                        <span>2.0 is Live!</span>
                         {/* <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" /> */}
                     </AnimatedShinyText>
                 </div>
-                <h1 className="whitespace-nowrap bg-gradient-to-br from-white from-30% to-gray-400 bg-clip-text py-4 text-5xl font-bold leading-none tracking-tight text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Transform your&nbsp;
+                <h1 className="whitespace-nowrap bg-gradient-to-br from-white from-30% to-gray-400 bg-clip-text py-4 text-5xl font-bold leading-none tracking-[-0.025em] text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Transform your&nbsp;
 
                      <br className='hidden sm:block'/> 
                     Digital Experiences
@@ -56,7 +56,7 @@ const Hero = () => {
 
 
                 <p className='text-gray-300 text-xl font-medium w-full md:text-2xl pt-2 pb-8'>Dynamic. Seamless. Robust.&nbsp;
-                    {/* <br className='hidden'/> */}
+                    <br className='md:hidden'/>
                     That&apos;s our motto.</p>
 
 
