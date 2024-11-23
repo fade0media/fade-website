@@ -11,8 +11,8 @@ import Animation from "@/components/ui/ParticleSystem";
 import Footer2 from "@/components/ui/Footer2";
 // import { initializeLenis } from "@/lib/utils";
 // import { useEffect } from "react";
-import { Inter } from "next/font/google"
-const inter = Inter({ subsets: ['latin'] })
+// import { Inter } from "next/font/google"
+// const inter = Inter({ subsets: ['latin'] })
 const satoshi = localFont({
   src: [
     {

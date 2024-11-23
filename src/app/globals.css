@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.perspective {
+  perspective: 1000px; /* Adjust to control depth */
+  overflow: hidden;
+  background: #0b1315; /* Dark background for contrast */
+}
 
 :root {
   --color-1: 0 100% 63%;
