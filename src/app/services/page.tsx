@@ -10,7 +10,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import { Timeline } from "@/components/ui/timeline";
 import { AllServices } from '@/components/ui/AllServices';
 import CTA from '@/components/sections/CTA';
-import BarrelRollAnimation from '@/components/ui/BarrelRollAnimation';
+// import BarrelRollAnimation from '@/components/ui/BarrelRollAnimation';
 // import { initializeLenis } from '@/lib/utils';
 // import { useScroll } from 'framer-motion';
 
@@ -38,7 +38,7 @@ const Page = () => {
 
           
           <AllServices />
-          <BarrelRollAnimation />
+          {/* <BarrelRollAnimation /> */}
         </section>
         <CTA />
         
