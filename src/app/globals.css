@@ -110,6 +110,32 @@
 }
 
 
+/* .card1 {
+  position: relative;
+  
+  min-height: 400px;
+  z-index: 40; /* Set a higher z-index than ::after 
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+  background-clip: border-box; 
+  border-radius: 0px;
+} */
+
+/* .card1::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: 40; 
+
+  background: linear-gradient(71deg, #000000, #020809, #080509);
+  border-radius: 35px;
+  margin: 3px;
+} */
+
+
 
 .hero-gradient1 {
   background: radial-gradient(circle at 100% 150%

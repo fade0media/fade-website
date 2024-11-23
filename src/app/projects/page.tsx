@@ -1,77 +1,46 @@
-//import { cn } from "@/lib/utils";
-import React from "react";
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
+import ProjectCard from '@/components/ui/ProjectCard'
+// import { motion } from 'framer-motion'
+import React from 'react'
 
-export default function BentoGridDemo() {
+const page = () => {
   return (
-    <BentoGrid className="md:px-24 px-8 relative z-40 w-full mt-24">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-        />
-      ))}
-    </BentoGrid>
-  );
+    <div  className="md:mb-36 my-24 relative z-40 gap-16 flex flex-col items-center w-full px-8 md:px-24 min-h-screen overflow-y-scroll">
+      <div className="flex flex-col justify-center items-center gap-4">
+        <h2 className="text-3xl font-semibold md:text-4xl lg:text-5xl">Our Work</h2>
+        <p className="text-xl text-gray-400 text-center">Explore some of our most creative endeavours.</p>
+      </div>
+      
+      <div className="gap-16 flex flex-col md:flex-row justify-between items-center w-full">
+        <div>
+          <ProjectCard />
+        </div>
+
+        <div>
+          <ProjectCard />
+        </div>
+      </div>
+
+      <div className="gap-16 flex flex-col md:flex-row justify-between items-center w-full">
+        <div>
+          <ProjectCard />
+        </div>
+
+        <div>
+          <ProjectCard />
+        </div>
+      </div>
+
+      <div className="gap-16 flex flex-col md:flex-row justify-between items-center w-full">
+        <div>
+          <ProjectCard />
+        </div>
+
+        <div>
+          <ProjectCard />
+        </div>
+      </div>
+    </div>
+  )
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
-const items = [
-  {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-  },
-];
+
+export default page

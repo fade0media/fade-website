@@ -17,6 +17,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import { Projects } from "@/components/sections/Projects";
 import Hero2 from "@/components/sections/Hero2";
 import Clients from "@/components/ui/Clients";
+import Steps from "@/components/sections/Steps";
 //import TestimonialCards from "@/components/ui/TestimonialCards";
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
         <Services1 />
         {/* <TestimonialCards /> */}
         <Projects />
+        <Steps />
         <Testimonials />
         <FAQ />
         <CTA />

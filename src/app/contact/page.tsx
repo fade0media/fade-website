@@ -12,14 +12,14 @@ const page = () => {
   return (
     <div className='flex flex-col justify-center  items-center px-8 md:px-24 relative z-40 w-full mt-16 md:mt-24 gap-16'>
 
-      <div className='flex flex-col justify-between md:flex-row items-start gap-8 md:items-end w-full'>
-        <div className="md:w-1/2 relative flex flex-col items-start justify-center w-full">
+      <div className='flex flex-col justify-center md:flex-row items-center gap-8 md:items-end w-full'>
+        <div className="md:w-1/2 relative flex flex-col items-center justify-center w-full">
           {/* Radial gradient for the container to give a faded look */}
           {/* <div className="absolute z-0 pointer-events-none inset-0 flex items-center justify-center"></div> */}
-          <p className="text-4xl text-left sm:text-6xl font-bold relative z-20 text-white mb-3 py-2 mt-8">
+          <p className="text-4xl text-center sm:text-6xl font-bold relative z-20 text-white mb-3 py-2 mt-8">
             Let&apos;s get to work!
           </p>
-          <p className='text-md sm:text-lg text-left text-gray-400'>Hop on a quick call with us and explore endless possibilities!</p>
+          <p className='text-md sm:text-lg text-center text-gray-400'>Hop on a quick call with us and explore endless possibilities!</p>
           {/* <Calendar /> */}
           {/* <p className='text-md sm:text-lg text-left my-8 text-gray-400'>Or reach out to us at:</p> */}
 
