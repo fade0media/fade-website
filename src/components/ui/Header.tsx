@@ -7,9 +7,9 @@ import Logo from "@/components/ui/Logo";
 
 const menuItems = [
   { id: 1, label: "Home", href: "/" },
-  { id: 2, label: "About", href: "/about" },
-  { id: 3, label: "Services", href: "/services" },
-  { id: 4, label: "Projects", href: "/projects" },
+  
+  { id: 2, label: "Services", href: "/services" },
+  { id: 3, label: "Projects", href: "/projects" },
   
 ];
 
@@ -41,16 +41,17 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-700 border-opacity-0 md:px-10 lg:px-16 px-4 ">
-      <div className="container mx-auto flex h-14 items-center justify-between px-4 backdrop-blur-md ">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-700 border-opacity-0 md:px-10 lg:px-24 px-4 ">
+
+      <div className="container mx-auto flex h-14 items-center justify-between backdrop-blur-md bg-black/40">
         <Logo />
 
-        <ul className="md:flex h-full items-center justify-center gap-8 text-md hidden backdrop-blur-md ">
+        <ul className="md:flex absolute left-1/2 top-0 -translate-x-1/2 h-full items-center justify-center gap-8 text-md hidden">
           {menuItems.map((item) => (
-            <li key={item.id} className="py-2">
+            <li key={item.id} className="py-2 text-center w-16">
               <a
                 href={item.href}
-                className="hover:text-gray-400 transition duration-300"
+                className="hover:text-gray-400 transition duration-300 text-center"
               >
                 {item.label}
               </a>
@@ -79,8 +80,10 @@ const Header: React.FC = () => {
       {/* Mobile menu */}
       {(hamburgerMenuIsOpen || isFadingOut) && (
         <nav
-          className={`fixed top-14 h-screen py-8 left-0 w-full  backdrop-blur-md transition-transform`}
-        >
+        className={`fixed z-50 top-14 h-screen left-0 w-full backdrop-blur-md bg-black/40 transition-transform`}
+        style={{ isolation: 'isolate' }}
+      >
+      
           <ul className="flex flex-col">
             {menuItems.map((item, index) => (
               <li
