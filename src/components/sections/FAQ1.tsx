@@ -39,7 +39,7 @@ function FAQ1() {
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center gap-4 md:items-start">
         <h1 className="text-center text-3xl font-semibold md:text-4xl lg:text-5xl md:text-left">
-          Any Questions? We've got you.
+          Any Questions? We&apos;ve got you.
         </h1>
         <p className="text-gray-400 md:text-lg text-balance text-center md:text-left">
           Let us handle the details, while you enjoy the results.
