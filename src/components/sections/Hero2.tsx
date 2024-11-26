@@ -5,7 +5,9 @@ import AnimatedShinyText from '@/components/ui/AnimatedShinyText'
 // import { GradualSpacing } from '@/components/ui/GradualSpacing'
 // import HyperText from '@/components/ui/HyperText'
 import { RainbowButton } from '@/components/ui/RainbowButton'
+// import Sparkles from '@/components/ui/Sparkles'
 import { cn } from '@/lib/utils'
+// import Link from 'next/link'
 // import { ArrowRightIcon } from 'lucide-react'
 
 // import React, { Suspense } from 'react';
@@ -20,7 +22,7 @@ import { cn } from '@/lib/utils'
 
 const Hero = () => {
     return (
-        <div className='md:h-[100vh] h-[75vh] hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-24 md:px-24 
+        <div className='md:h-[100vh] h-[75vh] hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-56 md:px-24 
         md:pb-48 pb-16
 '>
             {/* <StarsBackground /> */}
@@ -62,10 +64,23 @@ const Hero = () => {
 
 
                 {/* <Button link="#" name="Learn More"/> */}
-                <RainbowButton>
+                
+                <RainbowButton link="#services">
                     Learn More
                 </RainbowButton>
+                
 
+                <div className='relative -mt-32 h-80 w-full overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_bottom_center,transparent_90%)] before:opacity-40 after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[10%] '>
+                {/* <Sparkles
+            density={500}
+            speed={0.2}
+            size={1.5}
+            direction='top'
+            opacitySpeed={2}
+            color='#7dd3fc'
+            className='absolute left-1/2 -translate-x-1/2 top-48 h-[30vh] w-full'
+          /> */}
+            </div>
             </div>
 
             {/* <div className=" flex w-full fade-to-black max-w-5xl  items-center justify-center my-16">

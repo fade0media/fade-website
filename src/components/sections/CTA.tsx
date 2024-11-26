@@ -10,7 +10,7 @@ const CTA = () => {
       <p className="text-4xl text-center sm:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-br from-sky-100 from-30% to-gray-300 via-white py-8">
         Got Ideas? We&apos;ve got the skills.
       </p>
-      <RainbowButton>
+      <RainbowButton link="/contact">
                     Get a Quote
                 </RainbowButton>
     </div>

@@ -20,7 +20,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const Services1 = () => {
     return (
-        <section className='flex flex-col items-center justify-center gap-12 relative z-40 px-8 md:px-24 md:mt-36'>
+        <section id="services" className='flex flex-col items-center justify-center gap-12 relative z-40 px-8 md:px-24 my-16 md:my-36 '>
             
             <div className='flex flex-col justify-center items-center sm:gap-2 gap-4 '>
             {/* <div className="flex flex-col justify-center gap-3 items-center"> */}

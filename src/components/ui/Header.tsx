@@ -41,9 +41,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-700 border-opacity-0 md:px-10 lg:px-24 px-4 ">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-700 border-opacity-0 ">
 
-      <div className="container mx-auto flex h-14 items-center justify-between backdrop-blur-md bg-black/40">
+      <div className="w-full flex h-14 items-center justify-between backdrop-blur-md bg-black/40 px-8 md:px-24 ">
         <Logo />
 
         <ul className="md:flex absolute left-1/2 top-0 -translate-x-1/2 h-full items-center justify-center gap-8 text-md hidden">
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
         style={{ isolation: 'isolate' }}
       >
       
-          <ul className="flex flex-col">
+          <ul className="flex flex-col mt-8">
             {menuItems.map((item, index) => (
               <li
                 key={item.id}

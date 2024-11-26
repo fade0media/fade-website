@@ -2,13 +2,14 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
-
+import { CursorProvider } from '@/app/contexts/CursorContext';
 import Header from "@/components/ui/Header";
 //import Footer from "@/components/ui/Footer";
-import AnimatedCursor from "react-animated-cursor"
+// import AnimatedCursor from "react-animated-cursor"
 import Animation from "@/components/ui/ParticleSystem";
 // import Footer1 from "@/components/ui/Footer1";
 import Footer2 from "@/components/ui/Footer2";
+import Cursor from "@/components/ui/Cursor";
 // import { initializeLenis } from "@/lib/utils";
 // import { useEffect } from "react";
 // import { Inter } from "next/font/google"
@@ -38,6 +39,7 @@ export default function RootLayout({
 }>) {
   
   return (
+    
     <html lang="en" className={satoshi.className}>
       {/* <head>
       <link rel="icon" href="/favicon.svg" sizes="any" />
@@ -45,28 +47,15 @@ export default function RootLayout({
       <body  
       className="tracking-[-0.025em]"
       >
-        
-        <AnimatedCursor 
-        innerSize={8}
-        outerSize={8}
-       
-        outerAlpha={0}
-        innerScale={0.01}
-        outerScale={6}
-        trailingSpeed={1}
-        outerStyle={{
-          backgroundColor: 'rgba(95, 207, 200, 0.5)',
-          
-        }}
-        showSystemCursor={true}
-        innerStyle={{
-          backgroundColor: '#5fbccf'
-        }}/>
+        <CursorProvider>
+        <Cursor />
         <Animation />
         <Header />
         {children}
         <Footer2 />
+        </CursorProvider>
       </body>
     </html>
+    
   );
 }

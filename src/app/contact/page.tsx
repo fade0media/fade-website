@@ -10,7 +10,7 @@ import Calendar from '@/components/ui/Calendar';
 const page = () => {
 
   return (
-    <div className='flex flex-col justify-center  items-center px-8 md:px-24 relative z-40 w-full mt-16 md:mt-24 gap-16'>
+    <div className='flex flex-col justify-center  items-center px-8 md:px-24 relative z-40 w-full mt-16 md:my-24 gap-16'>
 
       <div className='flex flex-col justify-center md:flex-row items-center gap-8 md:items-end w-full'>
         <div className="md:w-1/2 relative flex flex-col items-center justify-center w-full">

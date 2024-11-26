@@ -4,6 +4,7 @@
 import About from "@/components/sections/About";
 import CTA from "@/components/sections/CTA";
 import FAQ from "@/components/sections/FAQ";
+import FAQ1 from "@/components/sections/FAQ1";
 // import Clients from "@/components/ui/Clients"
 // import Hero from "@/components/sections/Hero";
 import Services1 from "@/components/sections/Services1";
@@ -14,7 +15,7 @@ import Animation from "@/components/ui/ParticleSystem";
 // import { StarsBackground } from "@/components/ui/StarsBackground";
 // import Hero1 from "@/components/sections/Hero1";
 import Testimonials from "@/components/sections/Testimonials";
-import { Projects } from "@/components/sections/Projects";
+import Projects from "@/components/sections/Projects";
 import Hero2 from "@/components/sections/Hero2";
 import Clients from "@/components/ui/Clients";
 import Steps from "@/components/sections/Steps";
@@ -53,7 +54,7 @@ export default function Home() {
         <Projects />
         <Steps />
         <Testimonials />
-        <FAQ />
+        <FAQ1 />
         <CTA />
           
         {/* <div className="absolute right-0 bottom-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] z-50 hero-gradient1 rounded-bl-full">

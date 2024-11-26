@@ -18,6 +18,8 @@
     "@splinetool/runtime": "^1.9.32",
     "@studio-freight/lenis": "^1.0.42",
     "@tabler/icons-react": "^3.21.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.7.1",
     "@types/nodemailer": "^6.4.16",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",
