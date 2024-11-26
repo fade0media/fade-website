@@ -30,20 +30,20 @@ const tabs = [
 ];
 function FAQ1() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
-  const [activeItem, setActiveItem] = useState<
-    | {
-        title: string;
-        description: string;
-        imageUrl: string;
-      }
-    | undefined
-  >(tabs[0]);
+//   const [activeItem, setActiveItem] = useState<
+//     | {
+//         title: string;
+//         description: string;
+//         imageUrl: string;
+//       }
+//     | undefined
+//   >(tabs[0]);
 
-  const handleClick = async (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-    const newActiveItem = tabs.find((_, i) => i === index);
-    setActiveItem(newActiveItem);
-  };
+//   const handleClick = async (index: number) => {
+//     setActiveIndex(activeIndex === index ? null : index);
+//     const newActiveItem = tabs.find((_, i) => i === index);
+//     setActiveItem(newActiveItem);
+//   };
 
   return (
     <>
@@ -69,7 +69,7 @@ function FAQ1() {
               className={`py-4 overflow-hidden ${
                 index !== tabs.length - 1 ? 'border-b border-gray-400 border-opacity-45' : ''
               }`}
-              onClick={() => handleClick(index)}
+            //   onClick={() => handleClick(index)}
             >
               <button
                 className={`p-3 px-2 w-full cursor-pointer text-left text-2xl items-start transition-all font-semibold text-white flex gap-4 
