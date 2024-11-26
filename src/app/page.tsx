@@ -3,7 +3,7 @@
 
 import About from "@/components/sections/About";
 import CTA from "@/components/sections/CTA";
-import FAQ from "@/components/sections/FAQ";
+// import FAQ from "@/components/sections/FAQ";
 import FAQ1 from "@/components/sections/FAQ1";
 // import Clients from "@/components/ui/Clients"
 // import Hero from "@/components/sections/Hero";

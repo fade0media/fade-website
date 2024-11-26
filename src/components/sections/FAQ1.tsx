@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ArrowUpRight, Plus } from 'lucide-react';
-import Link from 'next/link';
+import { Plus } from 'lucide-react';
+// import Link from 'next/link';
 //import { imgPreview } from '@/components/website/constant';
 
 const tabs = [
