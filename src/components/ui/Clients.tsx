@@ -21,7 +21,7 @@ export default function InfiniteMovingCardsDemo() {
         </AnimatedShinyText>
       </div>
 
-      <div className="md:mt-8 rounded-md antialiased w-1/3 sm:w-3/4 max-w-3xl relative overflow-hidden flex justify-center items-center">
+      <div className="md:mt-8 rounded-md antialiased w-1/3 sm:w-1/2 lg:w-[1300px] relative overflow-hidden flex justify-center items-center">
 
         <InfiniteMovingCards1
           items={clients}
@@ -37,8 +37,6 @@ export default function InfiniteMovingCardsDemo() {
 const clients = [
   
   "asca",
-  "cliqbait",
-  
   "dietnprotein",
   "shoolin",
   "sierra",

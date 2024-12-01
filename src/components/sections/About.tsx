@@ -13,7 +13,7 @@ const About = () => {
     </div>
 
     <div className="container mx-auto">
-    <div className="flex justify-start items-center -m-4 text-center gap-8">
+    <div className="flex justify-start lg:justify-center items-center -m-4 text-center gap-8">
       <div className="p-4 text-left">
         <h2 className="title-font md:text-3xl text-xl font-bold text-white">20+</h2>
         <p className="leading-relaxed text-md font-semibold text-gray-400">Clients</p>

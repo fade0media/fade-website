@@ -20,7 +20,7 @@ export default function InfiniteMovingCardsDemo() {
         </AnimatedShinyText>
       </div>
 
-      <div className="mt-8 rounded-md antialiased w-1/3 sm:w-3/4 max-w-3xl relative overflow-hidden flex justify-center items-center">
+      <div className="mt-8 rounded-md antialiased w-1/3 sm:w-3/4 max-w-7xl relative overflow-hidden flex justify-center items-center">
 
         <InfiniteMovingCards
           items={techStack}
