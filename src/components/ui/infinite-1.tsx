@@ -74,7 +74,7 @@ export const InfiniteMovingCards1 = ({
                         ul.nextSibling.setAttribute('aria-hidden', 'true');
                     })"
       className={cn(
-        "w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]",
+        "w-1/4 lg:w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]",
         pauseOnHover && "hover:[animation-play-state:paused]"
       )}
     >
