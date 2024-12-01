@@ -76,7 +76,7 @@ function Projects1() {
     <section
       ref={containerRef}
       onMouseMove={handleMove}
-      className=' bg-black  relative w-4/5 mx-auto p-4 my-36'
+      className=' bg-black  relative w-4/5 mx-auto p-4 md:my-36'
     >
         <div className="flex flex-col justify-center items-center mb-16">
         <h2 className='text-3xl font-semibold md:text-4xl lg:text-5xl text-center'>Our Portfolio</h2>

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className=" flex flex-col justify-center items-center md:mt-16 md:mb-36 mb-24 relative z-40 gap-6">
+    <div className="my-16 flex flex-col justify-center items-center md:mt-16 mb-24 md:mb-8 relative z-40 gap-6">
       <div
         className={cn(
           "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
@@ -20,7 +20,7 @@ export default function InfiniteMovingCardsDemo() {
         </AnimatedShinyText>
       </div>
 
-      <div className="md:mt-8 rounded-md antialiased w-1/3 sm:w-3/4 max-w-3xl relative overflow-hidden flex justify-center items-center">
+      <div className="mt-8 rounded-md antialiased w-1/3 sm:w-3/4 max-w-3xl relative overflow-hidden flex justify-center items-center">
 
         <InfiniteMovingCards
           items={techStack}
