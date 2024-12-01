@@ -97,7 +97,7 @@ export const InfiniteMovingCards = ({
             key={index}
           >
             <Image
-              src={`http://localhost:3000/tech-icons/${item.name}.svg`}
+              src={`/tech-icons/${item.name}.svg`}
               width={100}
               height={100}
               alt={`${item.name} logo`}
@@ -148,7 +148,7 @@ export const InfiniteMovingCards = ({
             key={index}
           >
             <Image
-              src={`http://localhost:3000/tech-icons/${item.name}.svg`}
+              src={`/tech-icons/${item.name}.svg`}
               width={100}
               height={100}
               alt={`${item.name} logo`}
@@ -199,7 +199,7 @@ export const InfiniteMovingCards = ({
             key={index}
           >
             <Image
-              src={`http://localhost:3000/tech-icons/${item.name}.svg`}
+              src={`/tech-icons/${item.name}.svg`}
               width={100}
               height={100}
               alt={`${item.name} logo`}
