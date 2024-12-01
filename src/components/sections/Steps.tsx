@@ -12,7 +12,7 @@ const Steps = () => {
     {
       number: "02",
       step: "Planning",
-      description: "We create a detailed roadmap for success.",
+      description: "We create a detailed plan of action.",
     },
     {
       number: "03",
@@ -57,7 +57,7 @@ const Steps = () => {
   return (
     <div className="flex flex-col justify-center items-center relative z-30 my-24 px-8 md:px-24 ">
       <h2 className='text-3xl font-semibold md:text-4xl lg:text-5xl text-center'>How we get things done</h2>
-      <p className='text-gray-400 mt-4 md:text-lg text-balance text-center'>Let us handle the details, while you enjoy the results.</p>
+      <p className='text-gray-400 mt-4 md:text-xl text-balance text-center'>Efficient, innovative, and tailored to you — discover our process.</p>
     <motion.section
     
       className={`my-16 gap-16 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ${

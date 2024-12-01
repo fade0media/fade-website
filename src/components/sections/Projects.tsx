@@ -63,7 +63,7 @@ function Projects() {
     <section className="relative mx-auto px-8 text-white w-full gap-8 md:px-24 my-16 md:my-48">
       <div className="flex flex-col justify-center items-center mb-16">
         <h2 className='text-3xl font-semibold md:text-4xl lg:text-5xl text-center'>Our Portfolio</h2>
-        <p className='text-gray-400 mt-4 md:text-lg text-balance text-center'>Let us handle the details, while you enjoy the results.</p>
+        <p className='text-gray-400 mt-4 md:text-xl text-balance text-center'>Crafting solutions that leave a mark.</p>
       </div>
       <div className="flex justify-center items-center gap-24">
         <div className="w-1/2 lg:flex items-center justify-center relative hidden">

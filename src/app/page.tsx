@@ -15,10 +15,12 @@ import Animation from "@/components/ui/ParticleSystem";
 // import { StarsBackground } from "@/components/ui/StarsBackground";
 // import Hero1 from "@/components/sections/Hero1";
 import Testimonials from "@/components/sections/Testimonials";
-import Projects from "@/components/sections/Projects";
+// import Projects from "@/components/sections/Projects";
 import Hero2 from "@/components/sections/Hero2";
 import Clients from "@/components/ui/Clients";
 import Steps from "@/components/sections/Steps";
+import Projects1 from "@/components/sections/Projects1";
+import TechStack from "@/components/sections/TechStack";
 //import TestimonialCards from "@/components/ui/TestimonialCards";
 
 export default function Home() {
@@ -50,8 +52,9 @@ export default function Home() {
             <Clients/>
           <About />
         <Services1 />
+        <TechStack />
         {/* <TestimonialCards /> */}
-        <Projects />
+        <Projects1 />
         <Steps />
         <Testimonials />
         <FAQ1 />

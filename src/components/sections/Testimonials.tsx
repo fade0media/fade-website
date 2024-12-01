@@ -45,7 +45,7 @@ const Testimonials = () => {
   // Check if each testimonial is in view
   //const isInView1 = useInView(ref1, { once: true });
   //const isInView2 = useInView(ref2, { once: true });
-  const text = "Our clients consistently find working with us a seamless and rewarding experience. We're committed to understanding their unique goals and delivering impactful results."
+  const text = "Our goal is to provide impactful solutions and build meaningful relationships. Don't take our word for it, heres what people who we've worked with have to say about us."
   return (
     <div className="flex flex-col items-center justify-center relative z-40 mb-36 px-8 md:px-24 w-full ">
 

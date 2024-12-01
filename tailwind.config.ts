@@ -118,6 +118,10 @@ const config: Config = {
 			"0%": { "background-position": "0%" },
 			"100%": { "background-position": "200%" },
 		  },
+		  'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
 			
   		},
   		animation: {
@@ -128,10 +132,11 @@ const config: Config = {
 			'rotate-1': 'rotate-1 30s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-			scroll: 'scroll 10s forwards linear infinite',
+			scroll: 'scroll 1s forwards linear infinite',
 			'scroll-vertical': 'scrollVertical 100s linear infinite',
 			"shiny-text": "shiny-text 8s infinite",
 			rainbow: "rainbow var(--speed, 2s) infinite linear",
+			'infinite-scroll': 'infinite-scroll 55s linear infinite',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

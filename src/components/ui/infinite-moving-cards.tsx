@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -11,9 +12,8 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
     name: string;
-    title: string;
+    description: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -24,9 +24,11 @@ export const InfiniteMovingCards = ({
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
   useEffect(() => {
-    addAnimation();
+    //addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -43,21 +45,17 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
-        );
+        containerRef.current.style.setProperty("--animation-direction", "forwards");
       } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
-        );
+        containerRef.current.style.setProperty("--animation-direction", "reverse");
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -69,32 +67,170 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   return (
     <div
-      ref={containerRef}
+      x-data="{}"
+      x-init="$nextTick(() => {
+                        let ul = $refs.logos;
+                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                        ul.nextSibling.setAttribute('aria-hidden', 'true');
+                    })"
       className={cn(
-        "scroller relative z-20 overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
+        "w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]",
+        pauseOnHover && "hover:[animation-play-state:paused]"
       )}
     >
+
       <ul
-        ref={scrollerRef}
+
+        x-ref="logos"
         className={cn(
-          " flex gap-12 md:gap-16 py-4 flex-nowrap",
-          start && "animate-scroll ",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          "flex flex-nowrap  [&_img]:max-w-none animate-infinite-scroll",
+          start && "",
+          //pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item) => (
+        {items.map((item, index) => (
           <li
-            className="hover:text-blue-400"
-            // style={{
-            //   background:
-            //     "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            // }}
-            key={item.name}
+            className="relative hover:text-blue-400 h-full mx-8 md:mx-16"
+            key={index}
           >
-            <p>ClientLogo</p>
+            <Image
+              src={`http://localhost:3000/tech-icons/${item.name}.svg`}
+              width={100}
+              height={100}
+              alt={`${item.name} logo`}
+              className="text-white w-8 md:w-16"
+            />
+            {/* Tooltip */}
+            <div
+              className="tooltip absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 opacity-0 transition-opacity duration-300"
+              style={{
+                visibility: "hidden",
+              }}
+            >
+              <div className="bg-black text-white text-sm rounded px-2 py-1 max-w-xs">
+                {item.description}
+              </div>
+            </div>
+
+            {/* Hover Effect to Show Tooltip */}
+            {/* <div
+              className="absolute top-0 left-0 right-0 bottom-0 z-50"
+              onMouseEnter={(e) => {
+                const tooltip = e.currentTarget.querySelector('.tooltip') as HTMLElement;
+                tooltip && (tooltip.style.visibility = 'visible');
+                tooltip && (tooltip.style.opacity = '1');
+              }}
+              onMouseLeave={(e) => {
+                const tooltip = e.currentTarget.querySelector('.tooltip') as HTMLElement;
+                tooltip && (tooltip.style.visibility = 'hidden');
+                tooltip && (tooltip.style.opacity = '0');
+              }}
+            ></div> */}
+          </li>
+        ))}
+      </ul>
+
+      <ul
+
+        x-ref="logos"
+        className={cn(
+          "flex flex-nowrap  [&_img]:max-w-none animate-infinite-scroll",
+          start && "",
+          //pauseOnHover && "hover:[animation-play-state:paused]"
+        )}
+      >
+        {items.map((item, index) => (
+          <li
+            className="relative hover:text-blue-400 h-full mx-8 md:mx-16"
+            key={index}
+          >
+            <Image
+              src={`http://localhost:3000/tech-icons/${item.name}.svg`}
+              width={100}
+              height={100}
+              alt={`${item.name} logo`}
+              className="text-white w-8 md:w-16"
+            />
+            {/* Tooltip */}
+            <div
+              className="tooltip absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 opacity-0 transition-opacity duration-300"
+              style={{
+                visibility: "hidden",
+              }}
+            >
+              <div className="bg-black text-white text-sm rounded px-2 py-1 max-w-xs">
+                {item.description}
+              </div>
+            </div>
+
+            {/* Hover Effect to Show Tooltip */}
+            {/* <div
+              className="absolute top-0 left-0 right-0 bottom-0 z-50"
+              onMouseEnter={(e) => {
+                const tooltip = e.currentTarget.querySelector('.tooltip') as HTMLElement;
+                tooltip && (tooltip.style.visibility = 'visible');
+                tooltip && (tooltip.style.opacity = '1');
+              }}
+              onMouseLeave={(e) => {
+                const tooltip = e.currentTarget.querySelector('.tooltip') as HTMLElement;
+                tooltip && (tooltip.style.visibility = 'hidden');
+                tooltip && (tooltip.style.opacity = '0');
+              }}
+            ></div> */}
+          </li>
+        ))}
+      </ul>
+
+      <ul
+        aria-hidden="true"
+        x-ref="logos"
+        className={cn(
+          "flex flex-nowrap [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll",
+          start && "",
+          
+        )}
+      >
+        {items.map((item, index) => (
+          <li
+            className="relative hover:text-blue-400 h-full"
+            key={index}
+          >
+            <Image
+              src={`http://localhost:3000/tech-icons/${item.name}.svg`}
+              width={100}
+              height={100}
+              alt={`${item.name} logo`}
+              className="text-white w-8"
+            />
+            {/* Tooltip */}
+            <div
+              className="tooltip absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 opacity-0 transition-opacity duration-300"
+              style={{
+                visibility: "hidden",
+              }}
+            >
+              <div className="bg-black text-white text-sm rounded px-2 py-1 max-w-xs">
+                {item.description}
+              </div>
+            </div>
+
+            {/* Hover Effect to Show Tooltip */}
+            {/* <div
+              className="absolute top-0 left-0 right-0 bottom-0 z-50"
+              onMouseEnter={(e) => {
+                const tooltip = e.currentTarget.querySelector('.tooltip') as HTMLElement;
+                tooltip && (tooltip.style.visibility = 'visible');
+                tooltip && (tooltip.style.opacity = '1');
+              }}
+              onMouseLeave={(e) => {
+                const tooltip = e.currentTarget.querySelector('.tooltip') as HTMLElement;
+                tooltip && (tooltip.style.visibility = 'hidden');
+                tooltip && (tooltip.style.opacity = '0');
+              }}
+            ></div> */}
           </li>
         ))}
       </ul>

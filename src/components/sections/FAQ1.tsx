@@ -41,8 +41,8 @@ function FAQ1() {
         <h1 className="text-center text-3xl font-semibold md:text-4xl lg:text-5xl md:text-left">
           Any Questions? We&apos;ve got you.
         </h1>
-        <p className="text-gray-400 md:text-lg text-balance text-center md:text-left">
-          Let us handle the details, while you enjoy the results.
+        <p className="text-gray-400 md:text-xl text-balance text-center md:text-left">
+        We&apos;re here to address what matters most to you.
         </p>
       </div>
 
