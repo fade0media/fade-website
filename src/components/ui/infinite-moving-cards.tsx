@@ -2,14 +2,14 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 export const InfiniteMovingCards = ({
   items,
-  direction = "left",
-  speed = "fast",
+  // direction = "left",
+  // speed = "fast",
   pauseOnHover = true,
-  className,
+  // className,
 }: {
   items: {
     name: string;
@@ -20,14 +20,14 @@ export const InfiniteMovingCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  // const containerRef = React.useRef<HTMLDivElement>(null);
+  // const scrollerRef = React.useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     //addAnimation();
   }, []);
 
-  const [start, setStart] = useState(false);
+  // const [start, setStart] = useState(false);
 
   // function addAnimation() {
   //   if (containerRef.current && scrollerRef.current) {
@@ -87,7 +87,7 @@ export const InfiniteMovingCards = ({
         x-ref="logos"
         className={cn(
           "flex flex-nowrap  [&_img]:max-w-none animate-infinite-scroll",
-          start && "",
+          // start && "",
           //pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
@@ -138,7 +138,7 @@ export const InfiniteMovingCards = ({
         x-ref="logos"
         className={cn(
           "flex flex-nowrap  [&_img]:max-w-none animate-infinite-scroll",
-          start && "",
+          // start && "",
           //pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
@@ -189,7 +189,7 @@ export const InfiniteMovingCards = ({
         x-ref="logos"
         className={cn(
           "flex flex-nowrap [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll",
-          start && "",
+          // start && "",
           
         )}
       >
