@@ -17,10 +17,10 @@ const Cursor = () => {
       trailingSpeed={1}
       showSystemCursor={true}
       outerStyle={{
-        backgroundColor: 'rgba(95, 207, 200, 0.5)',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
       }}
       innerStyle={{
-        backgroundColor: '#5fbccf',
+        backgroundColor: '#ffffff',
       }}
     />
   );

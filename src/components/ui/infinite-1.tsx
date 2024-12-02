@@ -98,7 +98,7 @@ export const InfiniteMovingCards1 = ({
               width={300}
               height={300}
               alt={`${item} logo`}
-              className="text-white w-36 lg:w-48 grayscale"
+              className="text-white w-36 lg:w-48"
             />
           </li>
         ))}
@@ -123,7 +123,7 @@ export const InfiniteMovingCards1 = ({
               width={300}
               height={300}
               alt={`${item} logo`}
-              className="text-white w-36 lg:w-48 grayscale"
+              className="text-white w-36 lg:w-48"
             />
           </li>
         ))}
@@ -148,7 +148,7 @@ export const InfiniteMovingCards1 = ({
               width={300}
               height={300}
               alt={`${item} logo`}
-              className="text-white w-36 lg:w-42 grayscale"
+              className="text-white w-36 lg:w-42"
             />
           </li>
         ))}

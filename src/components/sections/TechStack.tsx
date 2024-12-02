@@ -24,8 +24,7 @@ export default function InfiniteMovingCardsDemo() {
 
         <InfiniteMovingCards
           items={techStack}
-          direction="right"
-          speed="fast"
+          pauseOnHover={true}
         />
       </div>
     </div>
@@ -35,36 +34,61 @@ export default function InfiniteMovingCardsDemo() {
 
 const techStack = [
   {
-    name: "nextjs",
-    description: "A React framework for building fast, scalable web applications."
+    name: "Next.js",
+    description: "A React framework for building fast, scalable web applications.",
+    iconName: "nextjs"
   },
   {
-    name: "flutter",
-    description: "An open-source framework for building natively compiled applications for mobile, web, and desktop from a single codebase."
+    name: "Flutter",
+    description: "An open-source framework for building natively compiled applications for mobile, web, and desktop from a single codebase.",
+    iconName: "flutter"
   },
   {
-    name: "tailwind",
-    description: "A utility-first CSS framework for creating custom designs quickly."
+    name: "TailwindCSS",
+    description: "A utility-first CSS framework for creating custom designs quickly.",
+    iconName: "tailwindcss"
   },
   {
-    name: "python",
-    description: "A versatile programming language used for web development, automation, data science, and more."
+    name: "Python",
+    description: "A versatile programming language used for web development, automation, data science, and more.",
+    iconName: "python"
   },
   
   {
-    name: "mongodb",
-    description: "A NoSQL database known for its scalability and flexibility in storing data."
+    name: "MongoDB",
+    description: "A NoSQL database known for its scalability and flexibility in storing data.",
+    iconName: "mongodb"
   },
   {
-    name: "cloudsql",
-    description: "A fully-managed relational database service by Google Cloud, supporting MySQL, PostgreSQL, and SQL Server."
+    name: "Cloud SQL",
+    description: "A fully-managed relational database service by Google Cloud, supporting MySQL, PostgreSQL, and SQL Server.",
+    iconName: "cloudsql"
   },
   {
-    name: "gcp",
+    name: "Google Cloud Platform",
+    iconName: "gcp",
     description: "Google Cloud Platform provides cloud computing services for scalable and secure applications."
   },
   {
-    name: "go",
-    description: "A statically typed, compiled programming language designed for simplicity and performance."
-  }
+    name: "Go",
+    description: "A statically typed, compiled programming language designed for simplicity and performance.",
+    iconName: "go"
+  },
+  {
+    name: "Figma",
+    description: "A collaborative design tool for creating stunning interfaces, wireframes, and prototypes effortlessly.",
+    iconName: "figma"
+  },
+  {
+    name: "Framer",
+    description: "A design and prototyping tool that bridges creativity and interactivity with production-ready code.",
+    iconName: "framer"
+  },
+  {
+    name: "Webflow",
+    description: "A no-code platform for designing, building, and launching responsive websites visually.",
+    iconName: "webflow"
+  },
+  
+  
 ];

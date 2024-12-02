@@ -1,8 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 // import Image from 'next/image'
 const ProjectCard = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-6 w-full'>
+    <Link
+    href="/project-template"
+     className='flex flex-col justify-center items-center gap-6 w-full'>
         <div className='w-full'>
         {/* <Image
         alt="Product"
@@ -28,7 +31,7 @@ const ProjectCard = () => {
             <p className='whitespace-nowrap text-sm md:text-md border border-gray-400 text-gray-400 rounded-full py-1 px-2'>Web Design</p>
         </div>
 
-    </div>
+    </Link>
   )
 }
 

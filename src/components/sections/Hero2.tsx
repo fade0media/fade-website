@@ -38,10 +38,10 @@ const Hero = () => {
                         {/* <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" /> */}
                     </AnimatedShinyText>
                 </div>
-                <h1 className="whitespace-nowrap bg-gradient-to-br from-white from-30% to-gray-400 bg-clip-text py-4 text-5xl font-bold leading-none tracking-[-0.025em] text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Transform your&nbsp;
+                <h1 className="whitespace-nowrap bg-gradient-to-br from-white from-30% to-gray-400 bg-clip-text py-4 text-5xl font-bold leading-none tracking-[-0.025em] text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl">Turning big ideas 
+                    into bigger opportunities.
 
-                     <br className='hidden sm:block'/> 
-                    Digital Experiences
+                     
                 </h1>
 
                 {/* <GradualSpacing
@@ -57,9 +57,7 @@ const Hero = () => {
 
 
 
-                <p className='text-gray-300 text-xl font-medium w-full md:text-2xl pt-2 pb-8'>Dynamic. Seamless. Robust.&nbsp;
-                    <br className='md:hidden'/>
-                    That&apos;s our motto.</p>
+                <p className='text-gray-300 text-xl font-medium w-full md:text-2xl pt-4 pb-6'> Crafting smarter strategies for businesses that aim higher.</p>
 
 
 

@@ -84,7 +84,7 @@ function Projects1() {
       </div>
       {list.map((item) => (
         <a
-          href="/projects"
+          href="/project-template"
           key={item.label}
           onMouseEnter={() => handleImageInteraction(item, 1)}
           onMouseMove={() => handleImageInteraction(item, 1)}
