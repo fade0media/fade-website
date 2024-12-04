@@ -21,15 +21,28 @@ const satoshi = localFont({
       style: 'normal',
       weight: '400'
     },
-   
+
   ],
 })
 
 
 
 export const metadata: Metadata = {
-  title: "Fade Media",
-  description: "Fade Media",
+  title: "Fade.",
+  description: "We offer customized digital solutions to help brands and individuals create and grow their online business.",
+  
+  openGraph: {
+    title: "Fade.",
+    description: "We offer customized digital solutions to help brands and individuals create and grow their online business.",
+    url: 'https://fademedia.in',
+    images: [
+      {
+        url: 'https://fademedia.in/og-image.png', 
+        width: 800,
+        height: 600,
+      },
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -37,25 +50,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
   return (
-    
+
     <html lang="en" className={satoshi.className}>
       {/* <head>
       <link rel="icon" href="/favicon.svg" sizes="any" />
       </head> */}
-      <body  
-      className="tracking-[-0.025em]"
+      <body
+        className="tracking-[-0.025em]"
       >
         <CursorProvider>
-        <Cursor />
-        <Animation />
-        <Header />
-        {children}
-        <Footer2 />
+          <Cursor />
+          <Animation />
+          <Header />
+          {children}
+          <Footer2 />
         </CursorProvider>
       </body>
     </html>
-    
+
   );
 }

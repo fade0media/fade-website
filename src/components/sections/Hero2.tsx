@@ -22,7 +22,7 @@ import { cn } from '@/lib/utils'
 
 const Hero = () => {
     return (
-        <div className='md:h-[100vh] h-[75vh] hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-56 md:px-24 
+        <div className='md:h-[100vh] h-[80vh] hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-56 md:px-24 
         md:pb-48 pb-16
 '>
             {/* <StarsBackground /> */}
@@ -57,7 +57,7 @@ const Hero = () => {
 
 
 
-                <p className='text-gray-300 text-xl font-medium w-full md:text-2xl pt-4 pb-6'> Crafting smarter strategies for businesses that aim higher.</p>
+                <p className='text-gray-300 text-xl font-medium w-full sm:w-2/3 md:text-2xl pt-4 pb-6'> Whether you&apos;re an industry leader or a scrappy startup with big dreams, we&apos;ve got you covered.</p>
 
 
 

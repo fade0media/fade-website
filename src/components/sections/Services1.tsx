@@ -34,10 +34,17 @@ const Services1 = () => {
             <p className='text-gray-400 md:text-lg text-balance text-center'>Let us handle the details, while you enjoy the results.</p>
             <Link
                     href="#"
-                    className='bg-white md:hidden text-black whitespace-nowrap sm:mt-6 px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-sm rounded-full font-semibold cursor-pointer'
+                    className='bg-white group md:hidden text-black whitespace-nowrap sm:mt-6 px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-sm rounded-full font-semibold cursor-pointer'
                 >
                     View All
-                    <ArrowUpRight className='w-4 h-4' />
+                    <ArrowUpRight
+                            className="w-4 h-4 transform transition-all duration-200 ease-out opacity-100 group-hover:opacity-0 group-hover:translate-x-5 group-hover:-translate-y-5"
+                          />
+                          
+                          
+                          <ArrowUpRight
+                            className="absolute top-7 right-8 w-4 h-4 opacity-0 transform transition-all duration-200 ease-out group-hover:opacity-100 group-hover:translate-x-4 group-hover:-translate-y-4"
+                          />
                 </Link>
             </div>
             
@@ -77,7 +84,14 @@ const Services1 = () => {
                             className='bg-white text-black whitespace-nowrap px-4 py-3 flex justify-center items-center gap-2 text-lg rounded-full font-semibold cursor-pointer'
                         >
                             View All 
-                            <ArrowUpRight className='w-4 h-4' />
+                            <ArrowUpRight
+                                    className="w-4 h-4 transform transition-all duration-200 ease-out opacity-100 group-hover:opacity-0 group-hover:translate-x-5 group-hover:-translate-y-5"
+                                  />
+                                  
+                                  
+                                  <ArrowUpRight
+                                    className="absolute top-7 right-8 w-4 h-4 opacity-0 transform transition-all duration-200 ease-out group-hover:opacity-100 group-hover:translate-x-4 group-hover:-translate-y-4"
+                                  />
                         </Link>
                     </div>
                 </div>

@@ -11,11 +11,9 @@ const CTA = () => {
       Your ideas deserve the best, and we deliver.
 
       </h1>
-      <p className='text-gray-300 text-xl text-center font-medium w-full md:text-2xl py-4'>Dynamic. Seamless. Robust.&nbsp;
-                    <br className='md:hidden'/>
-                    That&apos;s our motto.</p>
+      <p className='text-gray-300 text-xl text-center font-medium w-full md:text-2xl py-4'>Let&apos;s make your dreams happen today.</p>
       <RainbowButton link="/contact">
-                    Get a Quote
+                    Talk to us
                 </RainbowButton>
     </div>
   )
