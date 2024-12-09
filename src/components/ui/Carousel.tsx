@@ -6,7 +6,7 @@ interface CarouselProps {
 }
 
 export default function Carousel({ slides }: CarouselProps) {
-  let [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
 
   let previousSlide = () => {
     if (current === 0) setCurrent(slides.length - 1);
