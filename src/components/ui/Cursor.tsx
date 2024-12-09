@@ -8,6 +8,8 @@ const Cursor = () => {
   const { hideCursor } = useCursor();
 
   return (
+    <>
+    <div className='hidden md:flex'>
     <AnimatedCursor
       innerSize={hideCursor ? 0 : 8}
       outerSize={hideCursor ? 0 : 8}
@@ -23,6 +25,8 @@ const Cursor = () => {
         backgroundColor: '#ffffff',
       }}
     />
+    </div>
+    </>
   );
 };
 

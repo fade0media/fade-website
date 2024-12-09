@@ -21,6 +21,8 @@ import Clients from "@/components/ui/Clients";
 import Steps from "@/components/sections/Steps";
 import Projects1 from "@/components/sections/Projects1";
 import TechStack from "@/components/sections/TechStack";
+import VideoTestimonials from "@/components/sections/VideoTestimonials";
+import VideoTestimonials1 from "@/components/sections/VideoTestimonials1";
 //import TestimonialCards from "@/components/ui/TestimonialCards";
 
 export default function Home() {
@@ -56,6 +58,8 @@ export default function Home() {
         {/* <TestimonialCards /> */}
         <Projects1 />
         <Steps />
+        <VideoTestimonials />
+        <VideoTestimonials1 />
         <Testimonials />
         <FAQ1 />
         <CTA />

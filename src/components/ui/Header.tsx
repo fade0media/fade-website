@@ -7,10 +7,10 @@ import Logo from "@/components/ui/Logo";
 
 const menuItems = [
   { id: 1, label: "Home", href: "/" },
-  
+
   { id: 2, label: "Services", href: "/services" },
   { id: 3, label: "Projects", href: "/projects" },
-  
+
 ];
 
 const Header: React.FC = () => {
@@ -33,8 +33,8 @@ const Header: React.FC = () => {
       setIsFadingOut(true);
       setTimeout(() => {
         setHamburgerMenuIsOpen(false);
-        setIsFadingOut(false); 
-      }, 500); 
+        setIsFadingOut(false);
+      }, 500);
     } else {
       setHamburgerMenuIsOpen(true);
     }
@@ -48,10 +48,10 @@ const Header: React.FC = () => {
 
         <ul className="md:flex absolute left-1/2 top-0 -translate-x-1/2 h-full items-center justify-center gap-8 text-md hidden">
           {menuItems.map((item) => (
-            <li key={item.id} className="py-2 text-center w-16">
+            <li key={item.id} className="py-1 text-center w-16 relative">
               <a
                 href={item.href}
-                className="hover:text-gray-400 transition duration-300 text-center"
+                className="transition duration-300 text-center link"
               >
                 {item.label}
               </a>
@@ -59,9 +59,18 @@ const Header: React.FC = () => {
           ))}
         </ul>
 
-        <a href="/contact" className='bg-white text-black whitespace-nowrap px-3 py-2 flex justify-center items-center gap-2 text-xs rounded-2xl font-semibold cursor-pointer'>
-                Get a Quote
-              <ArrowUpRight className='w-4 h-4'/>
+        <a href="/contact" className='bg-white group relative text-black whitespace-nowrap px-3 py-2 flex justify-center items-center gap-2 text-xs rounded-2xl font-semibold cursor-pointer'>
+          Get a Quote
+          <div className="relative text-black">
+            <ArrowUpRight
+              className="w-4 h-4 transform transition-all duration-200 ease-out opacity-100 group-hover:opacity-0 group-hover:translate-x-5 group-hover:-translate-y-5"
+            />
+
+
+            <ArrowUpRight
+              className="absolute top-4 right-4 w-4 h-4 opacity-0 transform transition-all duration-200 ease-out group-hover:opacity-100 group-hover:translate-x-4 group-hover:-translate-y-4"
+            />
+          </div>
         </a>
 
         <button
@@ -80,19 +89,18 @@ const Header: React.FC = () => {
       {/* Mobile menu */}
       {(hamburgerMenuIsOpen || isFadingOut) && (
         <nav
-        className={`fixed z-50 top-14 h-screen left-0 w-full backdrop-blur-md bg-black/40 transition-transform`}
-        style={{ isolation: 'isolate' }}
-      >
-      
+          className={`fixed z-50 top-14 h-screen left-0 w-full backdrop-blur-md bg-black/40 transition-transform`}
+          style={{ isolation: 'isolate' }}
+        >
+
           <ul className="flex flex-col mt-8">
             {menuItems.map((item, index) => (
               <li
                 key={item.id}
-                className={`border-b pl-6 py-3 border-gray-600 border-opacity-45 ${
-                  isFadingOut
+                className={`border-b pl-6 py-3 border-gray-600 border-opacity-45 ${isFadingOut
                     ? "opacity-1 animate-fadeOut"
                     : "opacity-0 animate-fadeIn"
-                }`}
+                  }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <a
@@ -102,7 +110,7 @@ const Header: React.FC = () => {
                   {item.label}
                 </a>
               </li>
-              
+
             ))}
           </ul>
         </nav>

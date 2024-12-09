@@ -24,7 +24,7 @@ export default function InfiniteMovingCardsDemo() {
 
         <InfiniteMovingCards
           items={techStack}
-          pauseOnHover={true}
+          pauseOnHover={false}
         />
       </div>
     </div>

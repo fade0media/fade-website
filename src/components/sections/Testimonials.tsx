@@ -47,7 +47,7 @@ const Testimonials = () => {
   // Check if each testimonial is in view
   //const isInView1 = useInView(ref1, { once: true });
   //const isInView2 = useInView(ref2, { once: true });
-  const text = "Don't just take our word for it."
+  const text = "Your success stories are our greatest pride."
   return (
     <div className="flex flex-col items-center justify-center relative z-40 mb-36 px-8 md:px-24 w-full ">
 
@@ -57,28 +57,30 @@ const Testimonials = () => {
           <div className='gap-8 text-3xl font-semibold md:text-4xl lg:text-5xl w-full text-left text-white'>
             <FadeInText text={text} />
           </div>
-          <div className="text-xl text-gray-400 w-3/4">
+          {/*<div className="text-xl text-gray-400 w-3/4">
           <FadeInText text="Here's what people who we've worked with have to say about us." />
           
-          </div>
-          <div className="text-xl text-white w-3/4">
-          <FadeInText text="Impressed?" />
+          </div> */}
+          <div className="text-2xl text-gray-400 w-3/4">
+            <FadeInText text="Ready to start your journey?" />
           </div>
 
           <Link
-                    href="#"
-                    className='bg-white relative group text-black whitespace-nowrap px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-sm rounded-full font-semibold cursor-pointer'
-                >
-                    Give us a call
-                    <ArrowUpRight
-                            className="w-4 h-4 transform transition-all duration-200 ease-out opacity-100 group-hover:opacity-0 group-hover:translate-x-5 group-hover:-translate-y-5"
-                          />
-                          
-                          
-                          <ArrowUpRight
-                            className="absolute top-6 right-7 w-4 h-4 opacity-0 transform transition-all duration-200 ease-out group-hover:opacity-100 group-hover:translate-x-4 group-hover:-translate-y-4"
-                          />
-                </Link>
+            href="#"
+            className='bg-white relative group text-black whitespace-nowrap px-3 py-2 flex justify-center items-center text-sm gap-2 md:text-sm rounded-full font-semibold cursor-pointer'
+          >
+            Give us a call
+            <div className="relative text-black">
+              <ArrowUpRight
+                className="w-4 h-4 transform transition-all duration-200 ease-out opacity-100 group-hover:opacity-0 group-hover:translate-x-5 group-hover:-translate-y-5"
+              />
+
+
+              <ArrowUpRight
+                className="absolute top-4 right-4 w-4 h-4 opacity-0 transform transition-all duration-200 ease-out group-hover:opacity-100 group-hover:translate-x-4 group-hover:-translate-y-4"
+              />
+            </div>
+          </Link>
         </div>
 
 
