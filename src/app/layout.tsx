@@ -34,10 +34,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fade.",
     description: "We offer customized digital solutions to help brands and individuals create and grow their online business.",
-    url: 'https://fademedia.in',
+    url: 'https://fadeai.in',
     images: [
       {
-        url: 'https://fademedia.in/og-image.png', 
+        url: 'https://fadeai.in/og-image.png', 
         width: 800,
         height: 600,
       },
