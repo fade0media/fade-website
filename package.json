@@ -11,6 +11,7 @@
   "dependencies": {
     "@anishshobithps/tailwind-breakpoints": "^1.0.1",
     "@calcom/embed-react": "^1.5.1",
+    "@number-flow/react": "^0.4.2",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-tooltip": "^1.1.4",
     "@react-three/drei": "^9.115.0",
