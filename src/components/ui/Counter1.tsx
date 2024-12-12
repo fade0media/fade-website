@@ -15,7 +15,7 @@ export function Counter1({
   
 
   return (
-    <span className='flex flex-col items-center justify-center gap-2'>
+    <span className='flex flex-col items-center sm:items-start md:items-center justify-center gap-2'>
       {/* Main Number */}
       <span className='text-5xl font-semibold text-white'>
         <NumberFlow value={value} format={{ maximumFractionDigits: 0 }} />

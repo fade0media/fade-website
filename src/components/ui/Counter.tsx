@@ -13,7 +13,7 @@ const StatsSection = () => {
       
       <div className="stats w-full bg-black relative">
         <div className="stats-overlay w-full h-full  bg-opacity-70">
-          <div className="flex justify-start lg:justify-center items-center -m-4 text-center gap-8">
+          <div className="flex justify-start lg:justify-center items-start sm:items-center -m-4 text-center md:gap-8">
             {/* Single Stat */}
             <div className="p-4 text-left">
               <div

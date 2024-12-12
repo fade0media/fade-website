@@ -22,7 +22,7 @@ import { cn } from '@/lib/utils'
 
 const Hero = () => {
     return (
-        <div className='md:h-[100vh] h-[80vh] hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-56 md:px-24 
+        <div className='md:h-[100vh] h-[80vh] hero-gradient flex flex-col md:mt-0 mt-24 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:pt-56 lg:pt-64 md:px-24 
         md:pb-48 pb-16
 '>
             {/* <StarsBackground /> */}

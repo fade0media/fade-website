@@ -14,7 +14,7 @@ const About1 = () => {
                     <FadeInText text="We offer customized digital solutions to help brands and individuals create and grow their online business." />
                 </div>
 
-                <div className="container mx-auto">
+                <div className="container lg:mx-auto">
                     <Counter1 />
 
                 </div>
