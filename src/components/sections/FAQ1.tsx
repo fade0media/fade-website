@@ -5,25 +5,22 @@ import { Plus } from 'lucide-react';
 
 const tabs = [
   {
-    title: 'How do UI components improve UX?',
+    title: "I'm looking to grow my business online, how do I start?",
     description:
-      'UI components can improve UX by providing familiar, consistent interactions that make it easy for users to navigate and interact with an application.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1709949908058-a08659bfa922?q=80&w=1200&auto=format',
+      "You can start by booking a call with us to explore how you can scale your business online. We'll start by getting to know your business, your needs and your goals; after which we will revert to you with tailored strategies to achieve those goals.",
+    
   },
   {
-    title: 'Common UI component design challenges?',
+    title: "I know other agencies that offer the same things, how are you different?",
     description:
-      'Some common challenges include maintaining consistency across different devices and screen sizes, ensuring compatibility with various browsers and assistive technologies, and balancing flexibility with ease of use.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1548192746-dd526f154ed9?q=80&w=1200&auto=format',
+      "Complex designs and clever strategies are great, but are you seeing real, measurable growth? That's the question that drives everything we do. While we pride ourselves in creativity, we define ourselves by the results we deliver.",
+    
   },
   {
-    title: 'Ensuring UI component responsiveness?',
+    title: "I'm a small business owner, will i get the same priority as larger organisations?",
     description:
-      'Developers can ensure the responsiveness of UI components by using techniques such as fluid layouts, flexible grids, and media queries to adapt the components to different screen sizes and orientations.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1693581176773-a5f2362209e6?q=80&w=1200&auto=format',
+      "We understand the sleepless nights, the big dreams and the deadlines. Not every agency is going to care about your business as strongly as you do. Every project we take on is personal. We treat your brand like it’s our own, diving deep into your goals and crafting solutions that actually work for your audience.",
+    
   },
 ];
 

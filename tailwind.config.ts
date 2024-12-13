@@ -132,7 +132,7 @@ const config: Config = {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
 			scroll: 'scroll 1s forwards linear infinite',
-			'scroll-vertical': 'scrollVertical 100s linear infinite',
+			'scroll-vertical': 'scrollVertical 50s linear infinite',
 			"shiny-text": "shiny-text 8s infinite",
 			rainbow: "rainbow var(--speed, 2s) infinite linear",
 			'infinite-scroll': 'infinite-scroll 55s linear infinite',

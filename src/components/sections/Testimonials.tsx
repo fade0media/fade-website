@@ -41,27 +41,19 @@ const Testimonials = () => {
       title: "Moby-Dick",
     },
   ];
-  //const ref1 = useRef(null);
-  //const ref2 = useRef(null);
 
-  // Check if each testimonial is in view
-  //const isInView1 = useInView(ref1, { once: true });
-  //const isInView2 = useInView(ref2, { once: true });
-  const text = "Your success stories are our greatest pride."
+
   return (
     <div className="flex flex-col items-center justify-center relative z-40 mb-36 px-8 md:px-24 w-full ">
 
 
-      <div className='flex flex-col justify-center items-center md:flex-row gap-56'>
-        <div className='flex flex-col md:w-1/2 justify-center items-start gap-4'>
-          <div className='gap-8 text-3xl font-semibold md:text-4xl lg:text-5xl w-full text-left text-white'>
-            <FadeInText text={text} />
+      <div className='flex flex-col justify-center items-center md:flex-row gap-8 md:gap-24 lg:gap-56'>
+        <div className='flex flex-col md:w-1/2 justify-center items-center md:items-start gap-4'>
+          <div className='gap-8 text-3xl font-semibold md:text-4xl lg:text-5xl w-full text-center md:text-left text-white'>
+            <FadeInText text="Your success stories are our greatest pride." />
           </div>
-          {/*<div className="text-xl text-gray-400 w-3/4">
-          <FadeInText text="Here's what people who we've worked with have to say about us." />
-          
-          </div> */}
-          <div className="text-2xl text-gray-400 w-3/4">
+      
+          <div className="md:text-2xl text-gray-400 text-lg text-center md:text-left">
             <FadeInText text="Ready to start your journey?" />
           </div>
 
@@ -88,7 +80,7 @@ const Testimonials = () => {
           <VerticalMovingCards
             items={testimonials}
             direction="up"
-            speed="slow"
+            speed={50}
           />
         </div>
 
