@@ -40,7 +40,7 @@ const Animation: React.FC = () => {
 
         // Geometry setup
         const geometry = new THREE.BufferGeometry();
-        const particleCount = 200;
+        const particleCount = 600;
         const positions = new Float32Array(particleCount * 3);
 
         for (let i = 0; i < particleCount; i++) {

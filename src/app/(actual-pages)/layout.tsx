@@ -1,14 +1,14 @@
 
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
-import "./globals.css";
+import "../globals.css";
 import { CursorProvider } from '@/app/contexts/CursorContext';
-// import Header from "@/components/ui/Header";
+import Header from "@/components/ui/Header";
 //import Footer from "@/components/ui/Footer";
 // import AnimatedCursor from "react-animated-cursor"
 import Animation from "@/components/ui/ParticleSystem";
 // import Footer1 from "@/components/ui/Footer1";
-// import Footer2 from "@/components/ui/Footer2";
+import Footer2 from "@/components/ui/Footer2";
 import Cursor from "@/components/ui/Cursor";
 // import { initializeLenis } from "@/lib/utils";
 // import { useEffect } from "react";
@@ -17,7 +17,7 @@ import Cursor from "@/components/ui/Cursor";
 const satoshi = localFont({
   src: [
     {
-      path: './fonts/Satoshi-Regular.woff',
+      path: '../fonts/Satoshi-Regular.woff',
       style: 'normal',
       weight: '400'
     },
@@ -53,22 +53,19 @@ export default function RootLayout({
 
   return (
 
-    <html lang="en" className={satoshi.className}>
-      {/* <head>
-      <link rel="icon" href="/favicon.svg" sizes="any" />
-      </head> */}
-      <body
+    <div className={satoshi.className}>
+      <div
         className="tracking-[-0.025em]"
       >
         <CursorProvider>
           <Cursor />
           <Animation />
-          
+          <Header />
           {children}
-          
+          <Footer2 />
         </CursorProvider>
-      </body>
-    </html>
+      </div>
+    </div>
 
   );
 }
