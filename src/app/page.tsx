@@ -4,7 +4,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className='flex flex-col justify-center items-center '>
-      <div className='mt-48 md:h-[100vh] h-[80vh] hero-gradient flex flex-col md:mt-0 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:px-24 
+      <div className='mt-48 md:h-[100vh] h-[60vh] hero-gradient flex flex-col md:mt-0 justify-start md:justify-center items-center w-full text-center relative px-8 pt-0 z-40 md:px-24 
         md:pb-48 pb-16
 '>
         <div className='flex flex-col justify-center items-center relative z-40'>
