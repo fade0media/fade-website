@@ -47,7 +47,7 @@ const Footer2 = () => {
           <div className="flex flex-col items-start justify-center">
             <p className="mr-1 text-white text-lg">General Inquiries:</p>
             <div className="flex justify-center items-center gap-2 group">
-              <a href="mailto:contact@fademedia.in" aria-label="General inquiries email" title="General inquiries email" className="link relative text-lg transition-colors duration-300 text-gray-400">contact@fademedia.in</a>
+              <a href="mailto:contact@fadeai.in" aria-label="General inquiries email" title="General inquiries email" className="link relative text-lg transition-colors duration-300 text-gray-400">contact@fadeai.in</a>
               <div className="relative mt-1 text-gray-400">
                 <ArrowUpRight
                   className="w-4 h-4 transform transition-all duration-200 ease-out opacity-100 group-hover:opacity-0 group-hover:translate-x-5 group-hover:-translate-y-5"
@@ -63,7 +63,7 @@ const Footer2 = () => {
           <div className="flex flex-col items-start justify-center">
             <p className="mr-1 text-white text-lg">Collaboration Opportunities:</p>
             <div className="flex justify-center items-center gap-2 group">
-              <a href="mailto:dm@fademedia.in" aria-label="Collab email" title="Collab email" className="link relative text-lg transition-colors duration-300 text-gray-400">dm@fademedia.in</a>
+              <a href="mailto:dm@fadeai.in" aria-label="Collab email" title="Collab email" className="link relative text-lg transition-colors duration-300 text-gray-400">dm@fadeai.in</a>
               <div className="relative mt-1 text-gray-400">
                 <ArrowUpRight
                   className="w-4 h-4 transform transition-all duration-200 ease-out opacity-100 group-hover:opacity-0 group-hover:translate-x-5 group-hover:-translate-y-5"

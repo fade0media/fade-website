@@ -1,46 +1,85 @@
-import ProjectCard from '@/components/ui/ProjectCard'
-// import { motion } from 'framer-motion'
-import React from 'react'
+import { cn } from "@/lib/utils";
+import React from "react";
+import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
+import {
+  IconClipboardCopy,
+  IconFileBroken,
+  IconSignature,
+  IconTableColumn,
+} from "@tabler/icons-react";
 
-const page = () => {
+export default function BentoGridSecondDemo() {
   return (
-    <div  className="md:mb-36 my-24 relative z-40 gap-16 flex flex-col items-center w-full px-8 md:px-24 min-h-screen overflow-y-scroll">
-      <div className="flex flex-col justify-center items-center gap-4">
-        <h2 className="text-3xl font-semibold md:text-4xl lg:text-5xl">Our Work</h2>
-        <p className="text-xl text-gray-400 text-center">Explore some of our most creative endeavours.</p>
-      </div>
-      
-      <div className="gap-16 flex flex-col md:flex-row justify-between items-center w-full">
-        <div>
-          <ProjectCard />
-        </div>
-
-        <div>
-          <ProjectCard />
-        </div>
-      </div>
-
-      <div className="gap-16 flex flex-col md:flex-row justify-between items-center w-full">
-        <div>
-          <ProjectCard />
-        </div>
-
-        <div>
-          <ProjectCard />
-        </div>
-      </div>
-
-      <div className="gap-16 flex flex-col md:flex-row justify-between items-center w-full">
-        <div>
-          <ProjectCard />
-        </div>
-
-        <div>
-          <ProjectCard />
-        </div>
-      </div>
-    </div>
-  )
+    <BentoGrid className="w-full mx-auto md:auto-rows-[20rem] px-8 md:px-24 my-24 relative z-40">
+      {items.map((item, i) => (
+        <BentoGridItem
+          key={i}
+          title={item.title}
+          description={item.description}
+          header={item.header}
+          className={item.className}
+          icon={item.icon}
+        />
+      ))}
+    </BentoGrid>
+  );
 }
-
-export default page
+const Skeleton = () => (
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
+);
+const items = [
+  {
+    title: "The Dawn of Innovation",
+    description: "Explore the birth of groundbreaking ideas and inventions.",
+    header: <Skeleton />,
+    className: "md:col-span-2",
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Digital Revolution",
+    description: "Dive into the transformative power of technology.",
+    header: <Skeleton />,
+    className: "md:col-span-1",
+    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Power of Communication",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    header: <Skeleton />,
+    className: "md:col-span-1",
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Power of Communication",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    header: <Skeleton />,
+    className: "md:col-span-1",
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Power of Communication",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    header: <Skeleton />,
+    className: "md:col-span-1",
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Art of Design",
+    description: "Discover the beauty of thoughtful and functional design.",
+    header: <Skeleton />,
+    className: "md:col-span-1",
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Power of Communication",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    header: <Skeleton />,
+    className: "md:col-span-2",
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
+  
+];

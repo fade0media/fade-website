@@ -7,19 +7,19 @@ const tabs = [
   {
     title: "I'm looking to grow my business online, how do I start?",
     description:
-      "You can start by booking a call with us to explore how you can scale your business online. We'll start by getting to know your business, your needs and your goals; after which we will revert to you with tailored strategies to achieve those goals.",
+      "You can start by booking a call with us to explore how you can scale your business online. We'll start by getting to know your business, your needs and your goals. You can leave the rest to us.",
     
   },
   {
     title: "I know other agencies that offer the same things, how are you different?",
     description:
-      "Complex designs and clever strategies are great, but are you seeing real, measurable growth? That's the question that drives everything we do. While we pride ourselves in creativity, we define ourselves by the results we deliver.",
+      "While we pride ourselves in creativity, we define ourselves by the results we deliver. Feel free to head over to our projects page and learn about the impact we've had on other businesses we've worked with.",
     
   },
   {
     title: "I'm a small business owner, will i get the same priority as larger organisations?",
     description:
-      "We understand the sleepless nights, the big dreams and the deadlines. Not every agency is going to care about your business as strongly as you do. Every project we take on is personal. We treat your brand like it’s our own, diving deep into your goals and crafting solutions that actually work for your audience.",
+      "We ensure that every project is given the attention it deserves, regardless if you're a small business, or a large corporation. You can count on us for reliable results with timely delivery.",
     
   },
 ];
@@ -55,7 +55,7 @@ function FAQ1() {
           >
             {/* Tab Button */}
             <button
-              className="p-3 px-2 w-full cursor-pointer text-left text-2xl items-start transition-all font-semibold text-white flex gap-4"
+              className="p-3 pl-2 w-full cursor-pointer text-left text-2xl items-start transition-all font-semibold text-white flex gap-4"
             >
               <Plus
                 className={`${

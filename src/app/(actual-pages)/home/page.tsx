@@ -1,7 +1,7 @@
 'use client'
 
 
-import About from "@/components/sections/About";
+// import About from "@/components/sections/About";
 import CTA from "@/components/sections/CTA";
 // import FAQ from "@/components/sections/FAQ";
 import FAQ1 from "@/components/sections/FAQ1";
@@ -53,7 +53,7 @@ export default function Home() {
           <Animation />
           <Hero2/>
             <Clients/>
-          <About />
+          {/* <About /> */}
           <About1 />
         <Services1 />
         <TechStack />

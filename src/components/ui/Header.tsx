@@ -51,7 +51,7 @@ const Header: React.FC = () => {
             <li key={item.id} className="py-1 text-center w-16 relative">
               <a
                 href={item.href}
-                className="transition duration-300 text-center link"
+                className="transition duration-300 text-center"
               >
                 {item.label}
               </a>

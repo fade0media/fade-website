@@ -28,11 +28,11 @@ const satoshi = localFont({
 
 
 export const metadata: Metadata = {
-  title: "Fade.",
+  title: "Fade AI",
   description: "We offer customized digital solutions to help brands and individuals create and grow their online business.",
   
   openGraph: {
-    title: "Fade.",
+    title: "Fade AI",
     description: "We offer customized digital solutions to help brands and individuals create and grow their online business.",
     url: 'https://fadeai.in',
     images: [

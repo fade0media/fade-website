@@ -108,7 +108,7 @@ const page = () => {
             <h2 className='text-2xl font-bold'>Contact Us</h2>
 
                 <p className='text-xl mt-2'>If you have any questions about this Privacy Policy or our practices, please contact us at&nbsp;
-                <a href="mailto:support@fademedia.in" aria-label="Support email" title="Support email" className="text-xl transition-colors duration-300 hover:text-white font-bold text-sky-200">support@fademedia.in</a>
+                <a href="mailto:support@fadeai.in" aria-label="Support email" title="Support email" className="text-xl transition-colors duration-300 hover:text-white font-bold text-sky-200">support@fadeai.in</a>
 
 
             
